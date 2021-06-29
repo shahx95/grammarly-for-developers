@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Demo App</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      input,
+      textarea,
+      [contenteditable] {
+        font: inherit;
+        line-height: 1.5;
+        width: 600px;
+        padding: 8px 12px;
+        overflow: auto;
+      }
+
+      pre {
+        white-space: pre-wrap;
+      }
+
+      details {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>@grammarly/sdk</h2>
+    <p>This demo uses text-to-speech instead of a traditional UI.</p>
+    <textarea spellcheck="false" rows="5">
+Mispellings and grammatical errors can effect your credibility.</textarea
+    >
+    <details>
+      <summary>Log</summary>
+      <pre id="output"></pre>
+    </details>
+
+    <script type="module">
+      // same as `import { init } from "@grammarly/sdk";`
+      import { init } from "https://cdn.jsdelivr.net/npm/@grammarly/sdk/+esm";
+
+      const input = document.querySelector("textarea");
+      const log = document.getElementById("output");
+
+      const Grammarly = await init("5c891c34-55b1-4504-b1a2-5215d35757ba");
+      const editor = Grammarly.withText(input.value);
+
+      let lastCount = 0;
+      editor.addEventListener("suggestions", handleSuggestions);
+
+      input.addEventListener("input", () => {
+        editor.setText(input.value);
+      });
+
+      function handleSuggestions(event) {
+        let message = "";
+
+        const count = editor.suggestions.length;
+        if (count > lastCount) {
+          message = event.added
+            .map((suggestion) => {
+              const replacements = suggestion.replacements
+                .map((r) => r.label)
+                .join(", ");
+              return `${suggestion.title} - "${replacements}"`;
+            })
+            .join(" ");
+        } else if (count < lastCount) {
+          message =
+            count === 0
+              ? "Looks perfect!"
+              : `That looks better. ${count} left.`;
+        }
+
+        lastCount = count;
+        if (message) {
+          speak(message);
+        }
+      }
+
+      function speak(message) {
+        if (!message) return;
+
+        log.innerHTML += message + "\n";
+
+        const utterThis = new SpeechSynthesisUtterance(message);
+        utterThis.lang = "en-AU";
+        utterThis.onerror = function (event) {
+          console.error("error while speaking", event);
+        };
+        window.speechSynthesis.speak(utterThis);
+      }
+    </script>
+  </body>
+</html>
