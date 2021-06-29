@@ -16,9 +16,7 @@
         font-family: sans-serif;
       }
 
-      input,
-      textarea,
-      [contenteditable] {
+      textarea {
         font: inherit;
         line-height: 1.5;
         width: 600px;
@@ -30,14 +28,17 @@
         white-space: pre-wrap;
       }
 
-      details {
-        margin-top: 20px;
+      button,
+      textarea {
+        display: block;
+        margin-bottom: 20px;
       }
     </style>
   </head>
   <body>
     <h2>@grammarly/sdk</h2>
     <p>This demo uses text-to-speech instead of a traditional UI.</p>
+    <button>Start</button>
     <textarea spellcheck="false" rows="5">
 Mispellings and grammatical errors can effect your credibility.</textarea
     >
@@ -50,18 +51,30 @@ Mispellings and grammatical errors can effect your credibility.</textarea
       // same as `import { init } from "@grammarly/sdk";`
       import { init } from "https://cdn.jsdelivr.net/npm/@grammarly/sdk/+esm";
 
-      const input = document.querySelector("textarea");
+      const textarea = document.querySelector("textarea");
       const log = document.getElementById("output");
 
-      const Grammarly = await init("5c891c34-55b1-4504-b1a2-5215d35757ba");
-      const editor = Grammarly.withText(input.value);
+      const button = document.querySelector("button");
+      button.addEventListener("click", () => {
+        start();
+        button.disabled = true;
+      });
 
       let lastCount = 0;
-      editor.addEventListener("suggestions", handleSuggestions);
+      let editor;
 
-      input.addEventListener("input", () => {
-        editor.setText(input.value);
-      });
+      async function start() {
+        if (editor) return; // already started
+
+        const Grammarly = await init("5c891c34-55b1-4504-b1a2-5215d35757ba");
+        editor = Grammarly.withText(textarea.value);
+
+        editor.addEventListener("suggestions", handleSuggestions);
+
+        textarea.addEventListener("input", () => {
+          editor.setText(textarea.value);
+        });
+      }
 
       function handleSuggestions(event) {
         let message = "";
