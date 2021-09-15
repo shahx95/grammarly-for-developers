@@ -1,11 +1,15 @@
-# Grammarly Editor Plugin
+# Grammarly for Developers
 
-The Grammarly Editor Plugin allows apps to provide the [Grammarly experience](https://www.grammarly.com) without requiring users to install anything.
+Leverage the Grammarly API to bring seamless writing assistance to your users and improve the quality of content on your platform.
 
-<p align="center">
-  <img src="./docs/grammarly-hero.svg" height="400" alt="Grammarly plugin illustration" />
+<p>
+  <a href="https://developer.grammarly.com">
+    <img src="https://developer.grammarly.com/opengraph.v2.png" height="400" alt="Grammarly for Developers" />
+  </a>
 </p>
 
 ## Status
 
-Closed beta
+Public beta
+
+<a href="https://developer.grammarly.com">Apply now</a> for early access to the Text Editor SDK.
