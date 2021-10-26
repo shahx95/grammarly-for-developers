@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & Discussions
+    url: https://github.com/grammarly/grammarly-for-developers/discussions
+    about: Please ask and answer questions here.
+  - name: Security Issues & Bug Bounty
+    url: https://hackerone.com/grammarly
+    about: Please report security vulnerabilities here.
+  - name: Documentation
+    url: https://developer.grammarly.com/docs/
+    about: Check documentation.
