@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Demo App</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      input,
+      textarea,
+      [contenteditable] {
+        font: inherit;
+        line-height: 1.5;
+        width: 600px;
+        padding: 8px 12px;
+        overflow: auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      [contenteditable] {
+        height: 10rem;
+        border: 1px solid;
+        resize: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tone Detector</h1>
+    <p>
+      Focus an editor to start.
+      <a href="https://developer.grammarly.com/docs/tone" target="_blank"
+        >Learn more</a
+      >
+      about the tone detector.
+    </p>
+    <h2>Textarea</h2>
+    <textarea rows="10">
+Thank you all for being here today, and welcome to the third annual TRTL conference! I couldn't be more excited about all the fantastic speakers we'll be hearing on this stage. I would like to challenge you to step outside your comfort zone today and introduce yourself to at least three new people. Trust me: you'll be glad you did.</textarea
+    >
+
+    <h2>Input</h2>
+    <label for="test-input">Label</label>
+    <input
+      id="test-input"
+      value="Proposal Mobile alerts have become a proven tool to increase engagement for both active and recently inactive users. But you need to be careful not to send so many that it becomes annoying. I've developed some strategy recommendations, which I'm going to outline briefly."
+    />
+
+    <h2>Contenteditable</h2>
+    <div contenteditable="true">
+      <p>
+        I don't know much about it, but I have observed that social media has
+        become industry-standard for customer care. Furthermore, consumers
+        expect it: Seven in 10 U.S. consumers say they've spent more with a
+        company that provides exceptional service.
+      </p>
+    </div>
+
+    <script src="https://unpkg.com/@grammarly/editor-sdk@1.3?clientId=5c891c34-55b1-4504-b1a2-5215d35757ba"></script>
+    <script>
+      Grammarly.init().then((grammarly) => {
+        grammarly.withQuerySelector("textarea, input, [contenteditable]", {
+          ui: { showToneDetector: true },
+        });
+      });
+    </script>
+  </body>
+</html>
