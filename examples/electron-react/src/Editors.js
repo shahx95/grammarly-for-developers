@@ -1,4 +1,4 @@
-import React from "react";
+import React from ".pnpm/react@17.0.0/node_modules/react";
 
 import { Grammarly, GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
 import { demoClientId, demoText } from "./demo";
