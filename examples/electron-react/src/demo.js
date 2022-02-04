@@ -1,4 +1,4 @@
-export const demoClientId = "client_JHPHiNzDfEDjzBTLs6hMzJ";
+export const demoClientId = "YOUR_CLIENT_ID";
 
 export const demoText = {
   textarea: `The basics
