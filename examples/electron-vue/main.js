@@ -32,7 +32,7 @@ function enableTemporaryGrammarlyOriginWorkaround() {
 function handleGrammarlyOAuthCallback(win) {
   app.on("open-url", (event, link) => {
     if (link.includes("grammarly-auth")) {
-      // this validation depends on the callback URL provided in the developer hub
+      // this validation depends on the redirectURI provided in the developer hub
       // in the connected accounts section. For this app, I used `example://grammarly-auth/`
       event.preventDefault();
       win.webContents.send("grammarly:handleOAuthCallback", link);
