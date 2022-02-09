@@ -1,6 +1,6 @@
 # Electron Demo App With React
 
-This is a sample electron app with react to demo Grammarly SDK integration.
+This is a sample [Electron](https://www.electronjs.org] app built with [React](https://reactjs.org) to demo the Grammarly SDK integration.
 
 <img width="912" alt="Screenshot of the Electron demo app" src="https://user-images.githubusercontent.com/3940962/153027023-2e726d27-6996-4075-bcda-9c70b9840662.png">
 
