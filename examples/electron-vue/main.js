@@ -44,7 +44,7 @@ function handleNewWindowLinks(win) {
   win.webContents.setWindowOpenHandler(({ url }) => {
     if (url.includes('grammarly')) {
       // Grammarly's SDK worsk properly when the links open in the default browser
-      // instead of the electron app
+      // instead of the Electron app
 
       shell.openExternal(url); // open link in electron system's default browser
       return { action: "deny" }; // don't open link in electron window
