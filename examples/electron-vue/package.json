@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "main": "main.js",
   "name": "grammarly-example-electron-with-vue",
-  "displayName": "Editor SDK React Demo",
+  "displayName": "Editor SDK Vue Demo",
   "homepage": "./",
   "scripts": {
     "start": "electron .",
@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "path": "^0.12.7",
-    "@grammarly/editor-sdk-vue": "^1.3.0",
+    "@grammarly/editor-sdk-vue": "^1.4.0",
     "@vue/cli-plugin-babel": "4.1.1",
     "vue": "^2.6.11"
   }
