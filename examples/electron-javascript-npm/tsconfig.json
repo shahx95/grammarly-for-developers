@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "outDir": "dist",
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/*.ts"]
+}

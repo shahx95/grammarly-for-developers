@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "main": "main.js",
+  "name": "grammarly-example-electron-with-react",
+  "displayName": "Editor SDK React Demo",
+  "homepage": "./",
+  "scripts": {
+    "start": "electron .",
+    "build-react": "react-scripts build"
+  },
+  "devDependencies": {
+    "electron": "^16.0.5"
+  },
+  "build": {
+    "appId": "com.grammarly.developer.example",
+    "protocols": {
+      "name": "example-protocol",
+      "schemes": [
+        "example"
+      ]
+    }
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "@grammarly/editor-sdk-react": "^1.4.0",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-scripts": "3.4.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
