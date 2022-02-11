@@ -1,6 +1,6 @@
 # Electron Demo App With Vue
 
-This is a sample [Electron](https://www.electronjs.org] app built with Vue to demo the Grammarly SDK integration.
+This is a sample [Electron](https://www.electronjs.org) app built with Vue to demo the Grammarly SDK integration.
 
 <img width="912" alt="Screenshot of the Electron and Vue demo app" src="https://user-images.githubusercontent.com/3940962/153026427-5de8645e-fbb3-48c9-bf81-6690349df457.png">
 
@@ -8,7 +8,6 @@ This is a sample [Electron](https://www.electronjs.org] app built with Vue to de
 
 The instructions below will walk you through how to install, build, and run the app with basic functionality.
 
-1. Install [Electron](https://www.electronjs.org]: `npm i -D electron@latest`
 1. Clone this repo to your machine
 1. Install the necessary dependencies: `npm install`
 1. Create a new application with a desktop client in the [Grammarly Developer Hub](https://developer.grammarly.com/apps)
