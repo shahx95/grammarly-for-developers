@@ -2,7 +2,7 @@
 
 This is a sample [Electron](https://www.electronjs.org) app built with Vue to demo the Grammarly SDK integration.
 
-<img width="912" alt="Screenshot of the Electron and Vue demo app" src="https://user-images.githubusercontent.com/3940962/153026427-5de8645e-fbb3-48c9-bf81-6690349df457.png">
+<img width="600" alt="Screenshot of the Electron Demo App built with Vue" src="../../docs/electron-vue-demo.png">
 
 ## How to run the app
 
