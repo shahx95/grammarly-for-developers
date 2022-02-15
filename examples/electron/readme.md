@@ -1,15 +1,14 @@
 # Electron Demo App
 
-This is a sample [Electron](https://www.electronjs.org] app to demo the Grammarly SDK integration.
+This is a sample [Electron](https://www.electronjs.org) app to demo the Grammarly SDK integration.
 
 
-<img width="912" alt="Screenshot of the Electron Demo App" src="https://user-images.githubusercontent.com/3940962/152837523-a6d17634-517a-4228-a884-9efbc66f2e39.png">
+<img width="600" alt="Screenshot of the Electron Demo App" src="../../docs/electron-demo.png">
 
 ## How to run the app
 
 The instructions below will walk you through how to install and run the app with basic functionality.
 
-1. Install [Electron](https://www.electronjs.org]: `npm i -D electron@latest`
 1. Clone this repo to your machine
 1. Install the necessary dependencies: `npm install`
 1. Create a new application with a desktop client in the [Grammarly Developer Hub](https://developer.grammarly.com/apps)
