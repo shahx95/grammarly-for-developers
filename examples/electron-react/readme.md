@@ -19,3 +19,16 @@ The instructions below will walk you through how to install, build, and run the 
 1. Start the app: `npm start`
 
 The Electron app will open. When you click inside one of the text fields, Grammarly will underline text that can be improved. The Grammarly button will also appear in the lower-right corner of the application and display the total number of suggestions. 
+
+### Turning on Connected Accounts
+
+You'll need to complete a few extra steps if you would like to turn on [Connected Accounts](https://developer.grammarly.com/docs/connected-accounts). Connected Accounts allows users to connect their personal Grammarly accounts with the application.
+
+1. Navigate to the desktop client configuration page for your application in the [Grammarly Developer Hub](https://developer.grammarly.com/apps)
+1. Add the following as a Redirect URI: `example://grammarly-auth/`. Note that this matches the Redirect URI that the app configures in [Editors.js](src/Editors.js)
+1. Navigate to the **Connected Accounts** page for your application in the [Grammarly Developer Hub](https://developer.grammarly.com/apps)
+1. Turn **on** Connected Accounts
+1. Input the required information and click **Save**
+1. Reload your Electron app
+
+When you click the Grammarly button in the lower-right corner of the app, you will now see an option to **Connect your Grammarly account**. You can choose to connect your personal Grammarly account, so that Grammarly will make suggestions based on your account's features and preferences.
