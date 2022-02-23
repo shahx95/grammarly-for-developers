@@ -26,7 +26,7 @@ The Electron app will open. When you click inside one of the text fields, Gramma
 You'll need to complete a few extra steps if you would like to turn on [Connected Accounts](https://developer.grammarly.com/docs/connected-accounts). Connected Accounts allows users to connect their personal Grammarly accounts with your app.
 
 1. Navigate to the desktop client configuration page for your app in the [Grammarly Developer Hub](https://developer.grammarly.com/apps)
-1. Add the following as a Redirect URI: `example://grammarly-auth/`. Note that this matches the Redirect URI that the app configures in [index.html](index.html)
+1. Add the following as a Redirect URI: `example://grammarly-auth/`. Note that this matches the Redirect URI that the app configures in [index.ts](src/index.ts)
 1. Navigate to the **Connected Accounts** page for your app in the [Grammarly Developer Hub](https://developer.grammarly.com/apps)
 1. Turn **on** Connected Accounts
 1. Input the required information and click **Save**
