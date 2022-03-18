@@ -16,18 +16,6 @@ const createWindow = () => {
 };
 
 app.setAsDefaultProtocolClient("example");
-function enableTemporaryGrammarlyOriginWorkaround() {
-  // Modify the origin for all requests to the following urls.
-  const filter = {
-    urls: ["https://*.grammarly.com/*"],
-  };
-
-  session.defaultSession.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
-    details.requestHeaders.Origin = "null";
-    // eslint-disable-next-line node/no-callback-literal
-    callback({ requestHeaders: details.requestHeaders });
-  });
-}
 
 function handleGrammarlyOAuthCallback(win) {
   app.on("open-url", (event, link) => {
@@ -59,7 +47,6 @@ function handleNewWindowLinks(win) {
 app.whenReady().then(() => {
   const win = createWindow();
 
-  enableTemporaryGrammarlyOriginWorkaround()
   handleGrammarlyOAuthCallback(win)
   handleNewWindowLinks(win)
 });
