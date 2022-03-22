@@ -73,13 +73,11 @@ It can even help when you wanna refine ur slang or formality level. That's espec
       </p>
     </div>
 
-    <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=YOUR_CLIENT_ID"></script>
+    <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_JHPHiNzDfEDjzBTLs6hMzJ"></script>
     <script>
-      Grammarly.init().then((grammarly) => {
-        grammarly.withElement(document.querySelector("div[contenteditable]"), {
-          oauth: { redirectUri: "example://grammarly-auth/" },
-        });
-
+      Grammarly.init("client_JHPHiNzDfEDjzBTLs6hMzJ", {
+        oauthRedirectUri: "example://grammarly-auth/",
+      }).then((grammarly) => {
         window.registerGrammarlyAuthCallback(url => {
           grammarly.handleOAuthCallback(url);
         })
