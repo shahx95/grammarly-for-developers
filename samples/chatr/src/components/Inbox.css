@@ -1,0 +1,10 @@
+.Inbox {
+  border-right: 1px solid black;
+  height: 100%;
+}
+
+.InboxItem {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
