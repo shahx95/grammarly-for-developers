@@ -1,0 +1,11 @@
+{
+  "extensions": {
+    "recommendations": ["esbenp.prettier-vscode"]
+  },
+  "folders": [
+    {
+      "name": "Chatr",
+      "path": "./samples/chatr"
+    }
+  ]
+}
