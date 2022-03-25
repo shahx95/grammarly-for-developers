@@ -20,9 +20,9 @@ const CHATS = {
 
 export class ChatService {
   getPeople() {
-    Object.entries(PEOPLE).map(([key, value]) => ({
-      id: key,
-      name: value.name,
+    Object.entries(PEOPLE).map(([id, person]) => ({
+      id,
+      ...person,
     }));
   }
 
