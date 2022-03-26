@@ -15,7 +15,7 @@ function InboxItem({ user }) {
 }
 
 export function Inbox() {
-  const people = service.getPeople().filter((u) => u.id !== "0");
+  const people = service.getPeople().filter((u) => Boolean(u.id));
   return (
     <div className="Inbox">
       {people.map((user) => (

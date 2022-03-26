@@ -1,18 +1,18 @@
-const PEOPLE = {
-  0: { name: "You" },
-  1: { name: "David H" },
-  2: { name: "Rahul K" },
-  3: { name: "Jason S" },
-};
+const PEOPLE = [
+  { name: "You" },
+  { name: "David H" },
+  { name: "Rahul K" },
+  { name: "Jason S" },
+];
 const THREADS = {
   1: {
     messages: [
       {
-        author: "1",
+        author: 1,
         body: "I don't have a strong feeling about how to describe our product launch!",
       },
       {
-        author: "0",
+        author: 0,
         body: "I know just the site to help you get unstuck.",
       },
     ],
@@ -20,11 +20,11 @@ const THREADS = {
   2: {
     messages: [
       {
-        author: "0",
+        author: 0,
         body: "Did you push the latest changes to our repo?",
       },
       {
-        author: "2",
+        author: 2,
         body: "I'm about to, but I want some feedback before I push these into production, do you have a moment to chat?",
       },
     ],
@@ -32,11 +32,11 @@ const THREADS = {
   3: {
     messages: [
       {
-        author: "0",
+        author: 0,
         body: "Everything looks great, but are we sure we want to change the direction of our marking so dramatically?",
       },
       {
-        author: "3",
+        author: 3,
         body: "Our customers are ready for something new, but I understand this is a big change, let's get a meeting with Rob to see if there is any new feedback from our beta users.",
       },
     ],
@@ -45,7 +45,7 @@ const THREADS = {
 
 export class ChatService {
   getPeople() {
-    return Object.entries(PEOPLE).map(([id, person]) => ({
+    return PEOPLE.map((person, id) => ({
       id,
       ...person,
     }));
