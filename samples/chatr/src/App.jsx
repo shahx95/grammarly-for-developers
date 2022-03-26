@@ -19,19 +19,26 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function App() {
   return (
-    <div className="App">
-      <Grid container sx={{ height: "100%" }}>
-        <Grid item xs={4}>
-          <Inbox />
-        </Grid>
-        <Grid item xs={4}>
-          <ChatList />
-        </Grid>
-        <Grid item xs={4}>
-          <CustomerInfo />
-        </Grid>
+    <Grid container>
+      <Grid
+        item
+        xs={3}
+        lg={2}
+        sx={{
+          height: "100vh",
+          overflow: "auto",
+          boxShadow: "0 0 16px 0 rgba(0, 0, 0, 0.3)",
+        }}
+      >
+        <Inbox />
       </Grid>
-    </div>
+      <Grid item xs={6} lg={7} sx={{ height: "100vh", overflow: "auto" }}>
+        <ChatList activeUserId="1" />
+      </Grid>
+      <Grid item xs={3} lg={3} sx={{ height: "100vh", overflow: "auto" }}>
+        <CustomerInfo />
+      </Grid>
+    </Grid>
   );
 }
 
