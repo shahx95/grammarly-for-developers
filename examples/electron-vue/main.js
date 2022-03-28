@@ -31,7 +31,7 @@ function handleGrammarlyOAuthCallback(win) {
 function handleNewWindowLinks(win) {
   win.webContents.setWindowOpenHandler(({ url }) => {
     if (url.includes('grammarly')) {
-      // Grammarly's SDK worsk properly when the links open in the default browser
+      // Grammarly's SDK works properly when the links open in the default browser
       // instead of the Electron app
 
       shell.openExternal(url); // open link in electron system's default browser
