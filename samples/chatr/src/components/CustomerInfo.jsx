@@ -38,28 +38,31 @@ function stringAvatar(name) {
 }
 
 export function CustomerInfo() {
-    return <Wrapper className="CustomerInfo">
-        <Card ariant="outlined" sx={{}}>
-            <CardHeader
-                avatar={
-                    <Avatar alt="Remy Sharp" {...stringAvatar('Rahul Kadyan')} />
-                }
-                action={
-                    <IconButton aria-label="settings">
-                        <MoreVertIcon />
-                    </IconButton>
-                }
-                title="Rahul Kadyan"
-                subheader="Acme Co"
-            />
-            <CardContent>
-                <Typography>
-                    <Phone/>+33 000 0000 00
-                </Typography>
-                <Typography>
-                    <LocationOn/>Paris
-                </Typography>
-            </CardContent>
-        </Card>
-    </Wrapper>;
+  return <div
+      className="CustomerInfo"
+      style={{borderLeft: "1px solid rgba(0,0,0,0.05)", height: "100%"}}
+  >
+    <Card ariant="outlined" sx={{}}>
+      <CardHeader
+          avatar={
+            <Avatar alt="Remy Sharp" {...stringAvatar('Rahul Kadyan')} />
+          }
+          action={
+            <IconButton aria-label="settings">
+              <MoreVertIcon/>
+            </IconButton>
+          }
+          title="Rahul Kadyan"
+          subheader="Acme Co"
+      />
+      <CardContent>
+        <Typography>
+          <Phone/>+33 000 0000 00
+        </Typography>
+        <Typography>
+          <LocationOn/>Paris
+        </Typography>
+      </CardContent>
+    </Card>
+  </div>;
 }

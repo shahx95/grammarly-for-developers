@@ -1,10 +1,10 @@
-const PEOPLE = {
-  0: { name: "You" },
-  1: { name: "David H" },
-  2: { name: "Rahul K" },
-  3: { name: "Jason S" },
-};
-const CHATS = {
+const PEOPLE = [
+  { name: "You" },
+  { name: "David H" },
+  { name: "Rahul K" },
+  { name: "Jason S" },
+];
+const THREADS = {
   1: {
     messages: [
       {
@@ -45,26 +45,35 @@ const CHATS = {
 
 export class ChatService {
   getPeople() {
-    Object.entries(PEOPLE).map(([id, person]) => ({
+    return PEOPLE.map((person, id) => ({
       id,
       ...person,
     }));
   }
 
+  getUser(id) {
+    return {
+      id,
+      ...PEOPLE[id],
+    };
+  }
+
+  /**
+   *
+   * @param {keyof typeof THREADS} personId
+   * @returns
+   */
   getMessages(personId) {
     if (personId in PEOPLE) {
-      return {
-        customerInfo: PEOPLE[personId],
-        history: CHATS[personId],
-      };
-    } else {
-      throw new Error("person not found");
+      return THREADS[personId].messages;
     }
+
+    throw new Error("person not found");
   }
 
   sendMessage(from, to, message) {
-    if (to in CHATS) {
-      CHATS[to].messages.push({ author: from, body: message });
+    if (to in THREADS) {
+      THREADS[to].messages.push({ author: from, body: message });
     } else {
       throw new Error("chat not found");
     }
