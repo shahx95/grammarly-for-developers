@@ -1,7 +1,7 @@
-import {Avatar, Card, CardContent, CardHeader, IconButton, Typography} from '@mui/material';
+import {Avatar, Badge, Card, CardContent, CardHeader, IconButton, Typography} from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import styled from "@emotion/styled";
-import {LocationOn, Phone} from "@mui/icons-material";
+import {Email, LocationOn, Person, Phone} from "@mui/icons-material";
 
 const Wrapper = styled.div`
   width: 400px;
@@ -38,31 +38,40 @@ function stringAvatar(name) {
 }
 
 export function CustomerInfo() {
-  return <div
-      className="CustomerInfo"
-      style={{borderLeft: "1px solid rgba(0,0,0,0.05)", height: "100%"}}
-  >
-    <Card ariant="outlined" sx={{}}>
-      <CardHeader
-          avatar={
-            <Avatar alt="Remy Sharp" {...stringAvatar('Rahul Kadyan')} />
-          }
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon/>
-            </IconButton>
-          }
-          title="Rahul Kadyan"
-          subheader="Acme Co"
-      />
-      <CardContent>
-        <Typography>
-          <Phone/>+33 000 0000 00
-        </Typography>
-        <Typography>
-          <LocationOn/>Paris
-        </Typography>
-      </CardContent>
-    </Card>
-  </div>;
+    return <div
+        className="CustomerInfo"
+        style={{borderLeft: "1px solid rgba(0,0,0,0.05)", height: "100%"}}
+    >
+        <Card ariant="outlined" sx={{}}>
+            <CardHeader
+                avatar={
+                    <Avatar alt="Remy Sharp" {...stringAvatar('Rahul Kadyan')} />
+                }
+                action={
+                    <IconButton aria-label="settings">
+                        <MoreVertIcon/>
+                    </IconButton>
+                }
+                title="Rahul Kadyan"
+                subheader="Acme Co"
+            />
+            <CardContent>
+                <Typography>
+                    <Person/>Customer
+                </Typography>
+                <Typography>
+                    <Badge/>User id 11111111111
+                </Typography>
+                <Typography>
+                    <Phone/>Phone +33 000 0000 00
+                </Typography>
+                <Typography>
+                    <LocationOn/>Email Paris, France
+                </Typography>
+                <Typography>
+                    <Email/>Email rahul@istheking.com
+                </Typography>
+            </CardContent>
+        </Card>
+    </div>;
 }
