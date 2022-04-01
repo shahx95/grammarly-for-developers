@@ -1,51 +1,37 @@
-import {Avatar, Badge, Card, CardContent, CardHeader, IconButton, Typography} from '@mui/material';
+import {
+    Box,
+    Card,
+    CardContent,
+    CardHeader,
+    IconButton,
+    Stack,
+    Typography
+} from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import styled from "@emotion/styled";
-import {Email, LocationOn, Person, Phone} from "@mui/icons-material";
+import {AccountCircle, Email, LocationOn, Person, Phone} from "@mui/icons-material";
+import {Avatar} from "./Avatar";
 
-const Wrapper = styled.div`
-  width: 400px;
-  margin: 20px
-`
-
-function stringToColor(string) {
-    let hash = 0;
-    let i;
-
-    /* eslint-disable no-bitwise */
-    for (i = 0; i < string.length; i += 1) {
-        hash = string.charCodeAt(i) + ((hash << 5) - hash);
-    }
-
-    let color = '#';
-
-    for (i = 0; i < 3; i += 1) {
-        const value = (hash >> (i * 8)) & 0xff;
-        color += `00${value.toString(16)}`.slice(-2);
-    }
-    /* eslint-enable no-bitwise */
-
-    return color;
-}
-
-function stringAvatar(name) {
-    return {
-        sx: {
-            bgcolor: stringToColor(name),
-        },
-        children: `${name.split(' ')[0][0]}${name.split(' ')[1][0]}`,
-    };
+function CustomerInfoDetail({icon, name, value}) {
+    return <Stack direction={"row"} gap={1}>
+        {icon}
+        {name && <Typography sx={{color: "rgba(0,0,0,0.5)"}}>
+            {name}
+        </Typography>}
+        <Typography>
+            {value}
+        </Typography>
+    </Stack>
 }
 
 export function CustomerInfo() {
-    return <div
+    return <Box
         className="CustomerInfo"
-        style={{borderLeft: "1px solid rgba(0,0,0,0.05)", height: "100%"}}
+        sx={{padding: 2, borderLeft: "1px solid rgba(0,0,0,0.05)", height: "100%"}}
     >
-        <Card ariant="outlined" sx={{}}>
+        <Card variant="outlined">
             <CardHeader
                 avatar={
-                    <Avatar alt="Remy Sharp" {...stringAvatar('Rahul Kadyan')} />
+                    <Avatar name="Rahul Kadyan"/>
                 }
                 action={
                     <IconButton aria-label="settings">
@@ -56,22 +42,14 @@ export function CustomerInfo() {
                 subheader="Acme Co"
             />
             <CardContent>
-                <Typography>
-                    <Person/>Customer
-                </Typography>
-                <Typography>
-                    <Badge/>User id 11111111111
-                </Typography>
-                <Typography>
-                    <Phone/>Phone +33 000 0000 00
-                </Typography>
-                <Typography>
-                    <LocationOn/>Email Paris, France
-                </Typography>
-                <Typography>
-                    <Email/>Email rahul@istheking.com
-                </Typography>
+                <Stack gap={1}>
+                    <CustomerInfoDetail icon={<Person/>} value="Customer"/>
+                    <CustomerInfoDetail icon={<LocationOn/>} value="Paris, France"/>
+                    <CustomerInfoDetail icon={<AccountCircle/>} name="User ID" value="11111111111"/>
+                    <CustomerInfoDetail icon={<Phone/>} name="Phone" value="+33 000 0000 00"/>
+                    <CustomerInfoDetail icon={<Email/>} name="Email" value="rahul@istheking.com"/>
+                </Stack>
             </CardContent>
         </Card>
-    </div>;
+    </Box>;
 }
