@@ -9,7 +9,7 @@ import { ChatService } from "./services/ChatService";
 
 const service = new ChatService();
 const users = service.getAllUsers();
-const loggedInUser = service.getUser(4);
+const loggedInUser = service.getUser("4");
 
 const AppContext = React.createContext({
   service: null,

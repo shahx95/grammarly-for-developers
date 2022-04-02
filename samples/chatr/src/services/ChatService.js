@@ -4,7 +4,7 @@
 const USERS = {
   1: {
     name: "David H",
-    id: 1,
+    id: "1",
     avatarId: 60,
     company: "Acme Co",
     location: "Toronto, Canada",
@@ -12,21 +12,21 @@ const USERS = {
   },
   2: {
     name: "Rahul K",
-    id: 2,
+    id: "2",
     avatarId: 67,
     location: "Paris, France",
     email: "rahul@istheking.com",
   },
   3: {
     name: "Jason S",
-    id: 3,
+    id: "3",
     avatarId: 54,
     location: "New York",
     email: "me@json.com",
   },
   4: {
     name: "Elise F",
-    id: 4,
+    id: "4",
     avatarId: 37,
     location: "Seattle",
     email: "elise@awesome.design",
@@ -37,11 +37,11 @@ const THREADS = {
   1: {
     messages: [
       {
-        author: 1,
+        author: "1",
         body: "I don't have a strong feeling about how to describe our product launch!",
       },
       {
-        author: 4,
+        author: "4",
         body: "I know just the site to help you get unstuck.",
       },
     ],
@@ -49,11 +49,11 @@ const THREADS = {
   2: {
     messages: [
       {
-        author: 4,
+        author: "4",
         body: "Did you push the latest changes to our repo?",
       },
       {
-        author: 2,
+        author: "2",
         body: "I'm about to, but I want some feedback before I push these into production, do you have a moment to chat?",
       },
     ],
@@ -61,11 +61,11 @@ const THREADS = {
   3: {
     messages: [
       {
-        author: 4,
+        author: "4",
         body: "Everything looks great, but are we sure we want to change the direction of our marking so dramatically?",
       },
       {
-        author: 4,
+        author: "4",
         body: "Our customers are ready for something new, but I understand this is a big change, let's get a meeting with Rob to see if there is any new feedback from our beta users.",
       },
     ],

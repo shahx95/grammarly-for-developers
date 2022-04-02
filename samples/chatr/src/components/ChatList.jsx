@@ -21,9 +21,8 @@ export function ChatList() {
   const [text, setText] = useState(
     "Send every email with confidance. When every detail count, Grammarly has your back."
   );
-  const { service, user } = useChatService();
+  const { service, user, loggedInUser } = useChatService();
   const messages = service.getMessages(user.id);
-  console.log({ user, messages });
 
   useEffect(() => {
     focusEditor();
@@ -37,7 +36,7 @@ export function ChatList() {
         {messages.map((item, index) => (
           <ChatItem
             key={index}
-            type={item.author === "0" ? "outgoing" : "incoming"}
+            type={item.author === loggedInUser.id ? "outgoing" : "incoming"}
             message={item.body}
             user={service.getUser(item.author)}
           />
@@ -103,10 +102,14 @@ export function ChatList() {
   );
 
   function sendMessage() {
-    service.sendMessage("0", "1", text);
-    setText("");
-    focusEditor();
-    scrollToBottom();
+    try {
+      service.sendMessage(loggedInUser.id, user.id, text);
+      setText("");
+      focusEditor();
+      scrollToBottom();
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   function focusEditor() {

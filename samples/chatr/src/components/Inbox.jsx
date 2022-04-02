@@ -34,7 +34,6 @@ export function Inbox() {
           key={user.id}
           onClick={() => {
             selectUser(user.id);
-            console.log("test", user);
           }}
         />
       ))}
