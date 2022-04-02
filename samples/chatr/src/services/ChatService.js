@@ -1,9 +1,10 @@
-const PEOPLE = [
-  { name: "You" },
-  { name: "David H" },
-  { name: "Rahul K" },
-  { name: "Jason S" },
-];
+const USERS = {
+  1: { name: "David H", id: 1 },
+  2: { name: "Rahul K", id: 2 },
+  3: { name: "Jason S", id: 3 },
+  4: { name: "Elise F", id: 4 },
+};
+
 const THREADS = {
   1: {
     messages: [
@@ -12,7 +13,7 @@ const THREADS = {
         body: "I don't have a strong feeling about how to describe our product launch!",
       },
       {
-        author: 0,
+        author: 4,
         body: "I know just the site to help you get unstuck.",
       },
     ],
@@ -20,7 +21,7 @@ const THREADS = {
   2: {
     messages: [
       {
-        author: 0,
+        author: 4,
         body: "Did you push the latest changes to our repo?",
       },
       {
@@ -32,11 +33,11 @@ const THREADS = {
   3: {
     messages: [
       {
-        author: 0,
+        author: 4,
         body: "Everything looks great, but are we sure we want to change the direction of our marking so dramatically?",
       },
       {
-        author: 3,
+        author: 4,
         body: "Our customers are ready for something new, but I understand this is a big change, let's get a meeting with Rob to see if there is any new feedback from our beta users.",
       },
     ],
@@ -44,28 +45,24 @@ const THREADS = {
 };
 
 export class ChatService {
-  getPeople() {
-    return PEOPLE.map((person, id) => ({
-      id,
-      ...person,
-    }));
+  getAllUsers() {
+    return Object.values(USERS);
   }
 
   getUser(id) {
-    return {
-      id,
-      ...PEOPLE[id],
-    };
+    return USERS[id];
+  }
+
+  getAllThreads() {
+    return Object.values(THREADS);
   }
 
   /**
-   *
-   * @param {keyof typeof THREADS} personId
-   * @returns
+   * Get messages in thread with provided id
    */
-  getMessages(personId) {
-    if (personId in PEOPLE) {
-      return THREADS[personId].messages;
+  getMessages(userId) {
+    if (THREADS[userId]) {
+      return THREADS[userId].messages;
     }
 
     throw new Error("person not found");

@@ -1,26 +1,43 @@
-import Box from "@mui/material/Box";
+import React from "react";
+
+import {
+  List,
+  ListItemAvatar,
+  ListItemButton,
+  ListItemText,
+} from "@mui/material";
 import { Avatar } from "./Avatar";
-import { ChatService } from "../services/ChatService";
-import "./Inbox.css";
+import { useChatService } from "../AppContext";
 
-const service = new ChatService();
-
-function InboxItem({ user }) {
+function InboxItem({ user, ...rest }) {
   return (
-    <Box className="InboxItem">
-      <Avatar name={user.name} />
-      <Box sx={{ ml: 1 }}>{user.name}</Box>
-    </Box>
+    <ListItemButton {...rest}>
+      <ListItemAvatar>
+        <Avatar name={user.name} />
+      </ListItemAvatar>
+      <ListItemText primary={user.name} />
+    </ListItemButton>
   );
 }
 
 export function Inbox() {
-  const people = service.getPeople().filter((u) => Boolean(u.id));
+  const { service, loggedInUser, selectUser } = useChatService();
+  const users = service
+    .getAllUsers()
+    .filter((user) => user.id !== loggedInUser.id);
+
   return (
-    <div className="Inbox">
-      {people.map((user) => (
-        <InboxItem user={user} key={user.id} />
+    <List component="nav">
+      {users.map((user) => (
+        <InboxItem
+          user={user}
+          key={user.id}
+          onClick={() => {
+            selectUser(user.id);
+            console.log("test", user);
+          }}
+        />
       ))}
-    </div>
+    </List>
   );
 }

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   GrammarlyEditorPlugin,
   GrammarlyButton,
@@ -13,16 +14,16 @@ import {
   TextareaAutosize,
   Typography,
 } from "@mui/material";
-import { useEffect, useState } from "react";
-import { ChatService } from "../services/ChatService";
+import { useChatService } from "../AppContext";
 import { Avatar } from "./Avatar";
 
-const service = new ChatService();
-export function ChatList({ activeUserId }) {
+export function ChatList() {
   const [text, setText] = useState(
-    "Send every email with confidance. When every detail counts Grammarly has your back."
+    "Send every email with confidance. When every detail count, Grammarly has your back."
   );
-  const messages = service.getMessages(activeUserId);
+  const { service, user } = useChatService();
+  const messages = service.getMessages(user.id);
+  console.log({ user, messages });
 
   useEffect(() => {
     focusEditor();
