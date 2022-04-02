@@ -13,7 +13,7 @@ function InboxItem({ user, ...rest }) {
   return (
     <ListItemButton {...rest}>
       <ListItemAvatar>
-        <Avatar name={user.name} />
+        <Avatar user={user} />
       </ListItemAvatar>
       <ListItemText primary={user.name} />
     </ListItemButton>

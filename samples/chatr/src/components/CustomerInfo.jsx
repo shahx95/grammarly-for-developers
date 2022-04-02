@@ -45,7 +45,7 @@ export function CustomerInfo() {
     >
       <Card variant="outlined">
         <CardHeader
-          avatar={<Avatar name="Rahul Kadyan" />}
+          avatar={<Avatar user={user} />}
           action={
             <IconButton aria-label="settings">
               <MoreVertIcon />

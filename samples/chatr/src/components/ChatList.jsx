@@ -126,7 +126,7 @@ export function ChatList() {
 function ChatItem({ user, type, message }) {
   return (
     <Stack direction={type === "outgoing" ? "row-reverse" : "row"} gap={2}>
-      <Avatar name={user.name} />
+      <Avatar user={user} />
       <Stack>
         <Card elevation={0} sx={{ background: colors.grey[100] }}>
           <CardContent>{message}</CardContent>

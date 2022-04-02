@@ -1,8 +1,8 @@
 const USERS = {
-  1: { name: "David H", id: 1 },
-  2: { name: "Rahul K", id: 2 },
-  3: { name: "Jason S", id: 3 },
-  4: { name: "Elise F", id: 4 },
+  1: { name: "David H", id: 1, avatarId: 60 },
+  2: { name: "Rahul K", id: 2, avatarId: 67 },
+  3: { name: "Jason S", id: 3, avatarId: 54 },
+  4: { name: "Elise F", id: 4, avatarId: 37 },
 };
 
 const THREADS = {
