@@ -1,8 +1,36 @@
+// @ts-check
+
+/** @type { { [key: number]: import("../types/User").User }} */
 const USERS = {
-  1: { name: "David H", id: 1, avatarId: 60 },
-  2: { name: "Rahul K", id: 2, avatarId: 67 },
-  3: { name: "Jason S", id: 3, avatarId: 54 },
-  4: { name: "Elise F", id: 4, avatarId: 37 },
+  1: {
+    name: "David H",
+    id: 1,
+    avatarId: 60,
+    company: "Acme Co",
+    location: "Toronto, Canada",
+    email: "dadmaster@gmail.com",
+  },
+  2: {
+    name: "Rahul K",
+    id: 2,
+    avatarId: 67,
+    location: "Paris, France",
+    email: "rahul@istheking.com",
+  },
+  3: {
+    name: "Jason S",
+    id: 3,
+    avatarId: 54,
+    location: "New York",
+    email: "me@json.com",
+  },
+  4: {
+    name: "Elise F",
+    id: 4,
+    avatarId: 37,
+    location: "Seattle",
+    email: "elise@awesome.design",
+  },
 };
 
 const THREADS = {
