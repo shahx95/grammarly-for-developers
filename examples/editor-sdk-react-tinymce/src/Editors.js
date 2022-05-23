@@ -16,7 +16,7 @@ export const Editors = () => {
         autocomplete: "on"
       }}
     >
-      <h2>Textarea</h2>
+      <h2>TinyMCE Rich Text Editor</h2>
 
       {/* Wrap the rich text editor with <GrammarlyEditorPlugin> to add Grammarly suggestions  */}
       <GrammarlyEditorPlugin
