@@ -1,4 +1,4 @@
-# Grammarly Text Editor SDK & Quill Example
+# Grammarly Text Editor SDK & Quill Example 
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a [Quill](https://quilljs.com/) rich text editor.
 
