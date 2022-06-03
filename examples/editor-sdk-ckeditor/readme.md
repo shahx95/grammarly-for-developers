@@ -14,7 +14,7 @@ Learn more about how to add Grammarly suggestions to rich text editors by visiti
 
 ## Get the Code
 
-A copy of this code is available in the [Grammarly for Developers GitHub repo](https://github.com/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-ckeditor).
+A copy of this code is available in the [Grammarly for Developers GitHub repo](https://github.com/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-ckeditor). 
 
 ## Ask a Question
 
