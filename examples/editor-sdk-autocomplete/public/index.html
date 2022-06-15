@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Demo App</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      input,
+      textarea,
+      [contenteditable] {
+        font: inherit;
+        line-height: 1.5;
+        width: 600px;
+        padding: 8px 12px;
+        overflow: auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      [contenteditable] {
+        height: 10rem;
+        border: 1px solid;
+        resize: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Textarea</h2>
+    <grammarly-editor-plugin>
+      <textarea rows="10">
+Autocomplete Example
+
+Type 'the' at the end of the following sentence to see autocomplete in action.
+
+Would any of </textarea>
+    </grammarly-editor-plugin>
+
+    <h2>Input</h2>
+    <label for="test-input">Label</label>
+    <grammarly-editor-plugin>
+      <input
+        id="test-input"
+        data-grammarly
+        value="Autocomplete is not supported for inputs."
+      />
+    </grammarly-editor-plugin>
+
+    <h2>Contenteditable</h2>
+      <grammarly-editor-plugin>
+        <div contenteditable="true" data-grammarly>
+        <h3>Autocomplete Example</h3>
+        <p>
+          Type 'the' at the end of the following sentence to see autocomplete in action.
+
+          Would any of 
+        </p>
+      </grammarly-editor-plugin>
+    </div>
+
+    <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <script>
+      document.querySelectorAll("grammarly-editor-plugin").forEach(grammarlyEditor => {
+        grammarlyEditor.config = { autocomplete: "on" };
+      })
+    </script>
+  </body>
+</html>
