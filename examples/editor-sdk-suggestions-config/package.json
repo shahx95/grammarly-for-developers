@@ -1,0 +1,6 @@
+{
+  "name": "grammarly-example-editor-sdk-suggestions-config",
+  "version": "1.0.2",
+  "main": "public/index.html",
+  "description": "Example integration for @grammarly/editor-sdk with suggestions config"
+}

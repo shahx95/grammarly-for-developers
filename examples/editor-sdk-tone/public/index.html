@@ -39,42 +39,20 @@
     </style>
   </head>
   <body>
-    <h2>Textarea</h2>
-    <grammarly-editor-plugin>
-      <textarea rows="10">
-Autocomplete Example
-
-Type 'the' at the end of the following sentence to see autocomplete in action.
-
-Would any of </textarea>
-    </grammarly-editor-plugin>
-
-    <h2>Input</h2>
-    <label for="test-input">Label</label>
-    <grammarly-editor-plugin>
-      <input
-        id="test-input"
-        value="Autocomplete is not supported for inputs."
-      />
-    </grammarly-editor-plugin>
-
-    <h2>Contenteditable</h2>
+    <h2>Tone Detector</h2>
       <grammarly-editor-plugin>
         <div contenteditable="true">
-        <h3>Autocomplete Example</h3>
-        <p>
-          Type 'the' at the end of the following sentence to see autocomplete in action.
-
-          Would any of 
-        </p>
+          <h3>Spot the tone detector near the Grammarly button</h3>
+          <p>
+            I think we should be able to get the order to you in time for your event if we change the shipping to 2-day air. Would you like me to go ahead and make that change for you?
+          </p>
+        </div>
       </grammarly-editor-plugin>
-    </div>
 
     <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
     <script>
-      document.querySelectorAll("grammarly-editor-plugin").forEach(grammarlyEditor => {
-        grammarlyEditor.config = { autocomplete: "on" };
-      })
+      const grammarlyEditors = document.getElementsByTagName("grammarly-editor-plugin")
+      grammarlyEditors.item(0).config = { showToneDetector: true };
     </script>
   </body>
 </html>
