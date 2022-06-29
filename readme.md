@@ -4,7 +4,7 @@ Leverage the Grammarly API to bring seamless writing assistance to your users an
 
 <p>
   <a href="https://developer.grammarly.com">
-    <img src="https://developer.grammarly.com/opengraph.v2.png" height="400" alt="Grammarly for Developers" />
+    <img src="https://developer.grammarly.com/opengraph.v2.png" alt="Grammarly for Developers" />
   </a>
 </p>
 
