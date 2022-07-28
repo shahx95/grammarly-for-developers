@@ -49,7 +49,7 @@
       </grammarly-editor-plugin>
 
     <h2>Oxford commas turned on</h2>
-      <grammarly-editor-plugin config.suggestions.OxfordComma="true">
+      <grammarly-editor-plugin>
         <div contenteditable="true">
           <p>
             Please bring me a pencil, eraser and notebook.
@@ -58,5 +58,13 @@
       </grammarly-editor-plugin>
 
     <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <script>
+      const grammarlyEditors = document.getElementsByTagName("grammarly-editor-plugin")
+      grammarlyEditors.item(1).config = {
+        suggestions: {
+          OxfordComma: true,
+        }
+      };
+    </script>
   </body>
 </html>
