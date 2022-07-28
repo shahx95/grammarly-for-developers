@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Demo App</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      input,
+      textarea,
+      [contenteditable] {
+        font: inherit;
+        line-height: 1.5;
+        width: 600px;
+        padding: 8px 12px;
+        overflow: auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      [contenteditable] {
+        height: 10rem;
+        border: 1px solid;
+        resize: both;
+      }
+      .event {
+        padding: 8px;
+        margin: 4px;
+      }
+      .event.a {
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Plugin Turned Off Event</h2>
+    <grammarly-editor-plugin config.introText="We use Grammarly to give you writing assistance.">
+      <div contenteditable="true">
+        <h3>The basics</h3>
+        <p>
+          Mispellings and grammatical errors can effect your credibility. The same
+          goes for misused commas, and other types of punctuation . Not only will
+          Grammarly underline these issues in red, it will also showed you how to
+          correctly write the sentence.
+        </p>
+      </div>
+    </grammarly-editor-plugin>
+    <div>
+      <h3>Total Events:</h3>
+      <p id="events-count">0</p>
+    </div>
+    <div>
+      <h3>Events History:</h3>
+      <p id="events-information">No Event</p>
+    </div>
+    <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <script>
+      const editor = document.querySelector("grammarly-editor-plugin")
+
+      editor.addEventListener("plugin-turned-off", updateLastEvent)
+      editor.addEventListener("plugin-error", updateLastEvent)
+      editor.addEventListener("document-stats", updateLastEvent)
+      editor.addEventListener("session-stats", updateLastEvent)
+      editor.addEventListener("suggestion-card-open", updateLastEvent)
+      editor.addEventListener("suggestion-card-close", updateLastEvent)
+
+      const events = []
+      function updateLastEvent(event) {
+        events.unshift(event)
+        document.getElementById("events-information").innerHTML = events.map((e, i) => `
+        <div class="event ${i % 2 == 1 ? "a" : "b"}">
+        ${JSON.stringify({
+          type: e.type,
+          detail: e.detail
+        })}
+        </div>
+        `).join("\n")
+        document.getElementById("events-count").innerHTML = events.length
+      }
+    </script>
+  </body>
+</html>
