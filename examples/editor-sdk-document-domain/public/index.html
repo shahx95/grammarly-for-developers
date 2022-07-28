@@ -40,7 +40,7 @@
   </head>
   <body>
     <h2>General Domain</h2>
-      <grammarly-editor-plugin>
+      <grammarly-editor-plugin config.documentDomain="general">
         <div contenteditable="true">
           <p>
             You'll find that suggestions can possibly be different in different domains.
@@ -50,7 +50,7 @@
 
 
     <h2>Academic Domain</h2>
-      <grammarly-editor-plugin>
+      <grammarly-editor-plugin config.documentDomain="academic">
         <div contenteditable="true">
           <p>
             You'll find that suggestions can possibly be different in different domains.
@@ -59,10 +59,5 @@
       </grammarly-editor-plugin>
 
     <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
-    <script>
-      const grammarlyEditors = document.getElementsByTagName("grammarly-editor-plugin")
-      grammarlyEditors.item(0).config = { documentDomain: "general" };
-      grammarlyEditors.item(1).config = { documentDomain: "academic" };
-    </script>
   </body>
 </html>

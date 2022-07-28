@@ -40,7 +40,7 @@
   </head>
   <body>
     <h2>Canadian Dialect</h2>
-    <grammarly-editor-plugin>
+    <grammarly-editor-plugin config.documentDialect="canadian">
       <div contenteditable="true">
         <p>
           I like the color green. But not the colour blue so much.
@@ -49,7 +49,7 @@
     </grammarly-editor-plugin>
 
     <h2>American Dialect</h2>
-    <grammarly-editor-plugin>
+    <grammarly-editor-plugin config.documentDialect="american">
       <div contenteditable="true">
         <p>
           I like the color green. But not the colour blue so much.
@@ -58,10 +58,5 @@
     </grammarly-editor-plugin>
 
     <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
-    <script>
-      const grammarlyEditors = document.getElementsByTagName("grammarly-editor-plugin")
-      grammarlyEditors.item(0).config = { documentDialect: "canadian" };
-      grammarlyEditors.item(1).config = { documentDialect: "american" };
-    </script>
   </body>
 </html>

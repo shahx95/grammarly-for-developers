@@ -40,7 +40,7 @@
   </head>
   <body>
     <h2>Intro Text Example</h2>
-      <grammarly-editor-plugin>
+      <grammarly-editor-plugin config.introText="We use Grammarly to give you writing assistance.">
         <div contenteditable="true">
           <h3>The basics</h3>
           <p>
@@ -57,11 +57,10 @@
 
     <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
     <script>
-      const grammarlyEditors = document.getElementsByTagName("grammarly-editor-plugin")
-      grammarlyEditors.item(0).config = { introText: "We use Grammarly to give you writing assistance." };
-
       document.getElementById("reset").addEventListener("click", function() {
         localStorage.clear()
+        sessionStorage.clear()
+        window.location.reload()
       })
     </script>
   </body>

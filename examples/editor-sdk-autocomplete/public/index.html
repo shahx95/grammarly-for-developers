@@ -40,7 +40,7 @@
   </head>
   <body>
     <h2>Textarea</h2>
-    <grammarly-editor-plugin>
+    <grammarly-editor-plugin config.autocomplete="on">
       <textarea rows="10">
 Autocomplete Example
 
@@ -51,7 +51,7 @@ Would any of </textarea>
 
     <h2>Input</h2>
     <label for="test-input">Label</label>
-    <grammarly-editor-plugin>
+    <grammarly-editor-plugin config.autocomplete="on">
       <input
         id="test-input"
         value="Autocomplete is not supported for inputs."
@@ -59,7 +59,7 @@ Would any of </textarea>
     </grammarly-editor-plugin>
 
     <h2>Contenteditable</h2>
-      <grammarly-editor-plugin>
+      <grammarly-editor-plugin config.autocomplete="on">
         <div contenteditable="true">
         <h3>Autocomplete Example</h3>
         <p>
@@ -71,10 +71,5 @@ Would any of </textarea>
     </div>
 
     <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
-    <script>
-      document.querySelectorAll("grammarly-editor-plugin").forEach(grammarlyEditor => {
-        grammarlyEditor.config = { autocomplete: "on" };
-      })
-    </script>
   </body>
 </html>
