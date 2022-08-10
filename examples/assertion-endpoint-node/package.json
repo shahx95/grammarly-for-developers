@@ -1,0 +1,12 @@
+{
+  "name": "trusted-auth-server",
+  "version": "1.0.0",
+  "description": "An example node server that is capable to generate valid assertions to support the Trusted Auth system.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jose": "^4.8.3"
+  }
+}
