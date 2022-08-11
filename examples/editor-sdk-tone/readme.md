@@ -1,6 +1,6 @@
 # Grammarly Text Editor SDK with Tone Detector
 
-This demo shows how to add [Tone Detector](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#showtonedetector) config to  [Grammarly Text Editor SDK](https://developer.grammarly.com/).
+This demo shows how to add [Tone Detector](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#tonedetector) config to [Grammarly Text Editor SDK](https://developer.grammarly.com/).
 
 ## Try the Demo
 

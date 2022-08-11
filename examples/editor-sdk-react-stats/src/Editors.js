@@ -9,13 +9,13 @@ const StatsOutput = ({ stats }) => <pre>{JSON.stringify(stats, null, 2)}</pre>;
 export const Editors = () => {
   const [stats, setStats] = useState();
 
-  const config = {
-    onTextStats: (stats) => setStats(stats),
-  };
   return (
     <Grammarly clientId={demoClientId}>
       <h2>Textarea</h2>
-      <GrammarlyEditorPlugin config={config}>
+      <GrammarlyEditorPlugin
+        config={config}
+        onDocumentStats={(evt) => setStats(evt.detail)}
+      >
         <textarea defaultValue={demoText.textarea} rows={10}></textarea>
       </GrammarlyEditorPlugin>
       {stats && <StatsOutput stats={stats} />}
