@@ -9,7 +9,10 @@ export default {
 </script>
 
 <template>
-  <Grammarly :clientId="clientId" :config="{ oauth: { redirectUri: 'example://grammarly-auth/' } }">
+  <Grammarly
+    :clientId="clientId"
+    :config="{ oauthRedirectUri: 'example://grammarly-auth/' }"
+  >
     <div>
       <h2>Textarea</h2>
       <GrammarlyEditorPlugin>

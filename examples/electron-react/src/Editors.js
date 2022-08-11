@@ -6,9 +6,12 @@ import "./style.css";
 
 export const Editors = () => {
   return (
-    <Grammarly clientId={demoClientId} config={{
-      oauth: { redirectUri: "example://grammarly-auth/" },
-    }}>
+    <Grammarly
+      clientId={demoClientId}
+      config={{
+        oauthRedirectUri: "example://grammarly-auth/",
+      }}
+    >
       <h2>Textarea</h2>
       <GrammarlyEditorPlugin>
         <textarea defaultValue={demoText.textarea} rows={10}></textarea>

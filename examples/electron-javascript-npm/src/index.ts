@@ -13,7 +13,7 @@ async function setupGrammarly() {
 
   // setup the editor
   grammarly.addPlugin(document.querySelector("div[contenteditable]"), {
-    oauth: { redirectUri: "example://grammarly-auth/" },
+    oauthRedirectUri: "example://grammarly-auth/",
   });
 
   // setup connected accounts
