@@ -72,9 +72,9 @@ Thank you all for being here today, and welcome to the third annual TRTL confere
     <script src="https://unpkg.com/@grammarly/editor-sdk@1.6?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
     <script>
       Grammarly.init().then((grammarly) => {
-        grammarly.withQuerySelector("textarea, input, [contenteditable]", {
-          ui: { showToneDetector: true },
-        });
+        document
+          .querySelectorAll("textarea, input, [contenteditable]")
+          .forEach((el) => grammarly.addPlugin(el, { toneDetector: "on" }));
       });
     </script>
   </body>
