@@ -59,7 +59,7 @@
 
     // Configure the Grammarly Text Editor SDK
     Grammarly.init().then((grammarly) => {
-      grammarly.withElement(editor.ui.getEditableElement(), {
+      grammarly.addPlugin(editor.ui.getEditableElement(), {
         autocomplete: "on",
         documentDialect: "british"
       });

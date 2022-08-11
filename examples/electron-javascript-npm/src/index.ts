@@ -12,7 +12,7 @@ async function setupGrammarly() {
   const grammarly = await init(demoClientId);
 
   // setup the editor
-  grammarly.withElement(document.querySelector("div[contenteditable]"), {
+  grammarly.addPlugin(document.querySelector("div[contenteditable]"), {
     oauth: { redirectUri: "example://grammarly-auth/" },
   });
 

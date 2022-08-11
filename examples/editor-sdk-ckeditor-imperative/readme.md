@@ -1,6 +1,6 @@
 # Grammarly Text Editor SDK & CKEditor Example (Imperative)
 
-This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a [CKEditor](https://ckeditor.com/) rich text editor. The example uses [withElement()](https://developer.grammarly.com/docs/api/editor-sdk/editorsdk#withelement) to add the Grammarly suggestions in an imperative way.
+This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a [CKEditor](https://ckeditor.com/) rich text editor. The example uses [addPlugin()](https://developer.grammarly.com/docs/api/editor-sdk/editorsdk#addplugin) to add the Grammarly suggestions in an imperative way.
 
 ## Try the Demo
 
@@ -14,7 +14,7 @@ Learn more about how to add Grammarly suggestions to rich text editors by visiti
 
 ## Get the Code
 
-A copy of this code is available in the [Grammarly for Developers GitHub repo](https://github.com/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-ckeditor-imperative). 
+A copy of this code is available in the [Grammarly for Developers GitHub repo](https://github.com/grammarly/grammarly-for-developers/tree/main/examples/editor-sdk-ckeditor-imperative).
 
 ## Ask a Question
 
