@@ -67,17 +67,17 @@ It can even help when you wanna refine ur slang or formality level. That's espec
       its request for a Grammarly access token.
     -->
     <script type="module">
-      Grammarly.init("client_KygGdRgDxt1HVpiKpP6FgA").then((grammarly) => {
+      Grammarly.init("<YOUR_CLIENT_ID>").then((grammarly) => {
         grammarly.withElement(document.querySelector("textarea"), {
           oauthAssertionProvider: async () => {
             const response = await fetch(
-              "https://apps.grammarly.com/v1/assertions",
+              "https://<YOUR_ASSERTION_ENDPOINT>",
               {
                 method: "POST",
                 mode: "cors",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                  clientId: "client_KygGdRgDxt1HVpiKpP6FgA"
+                  clientId: "<YOUR_CLIENT_ID>"
                 })
               }
             );
