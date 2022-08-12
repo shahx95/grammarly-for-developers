@@ -5,6 +5,7 @@ const url = require("url");
 
 const privateKeyData = JSON.parse(fs.readFileSync("./private.jwk"));
 const kid = privateKeyData.kid;
+const alg = privateKeyData.alg;
 jose.importJWK(privateKeyData).then((privateKey) => {
   const server = http.createServer(async function (req, res) {
     console.log(
@@ -32,14 +33,18 @@ jose.importJWK(privateKeyData).then((privateKey) => {
       return;
     }
 
+    const now = Math.floor(new Date().getTime() / 1000);  // Epoch time in seconds
+    const issuedAt = now - 5;                 // Backdate by 5 seconds to account for any clock skew
+    const expirationTime = issuedAt + 5 * 60; // Assertion will be valid for about 5 minutes
     const assertion = await new jose.SignJWT({})
-      .setProtectedHeader({ alg: "RS256", ver: "v1", kid })
+      .setProtectedHeader({ ver: "v1", alg, kid })
       .setSubject(clientId)
-      .setIssuedAt()
+      .setIssuedAt(issuedAt)
       .setIssuer(clientId)
       .setAudience("https://tokens.grammarly.com/oauth2/token")
-      .setExpirationTime("5m")
+      .setExpirationTime(expirationTime)
       .sign(privateKey);
+
     res.writeHead(200, headers);
     res.end(JSON.stringify({ assertion }));
   });
