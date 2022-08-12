@@ -44,6 +44,7 @@ jose.importJWK(privateKeyData).then((privateKey) => {
     res.end(JSON.stringify({ assertion }));
   });
 
-  console.log("Starting server at http://127.0.0.1:8080");
-  server.listen(8080);
+  const port = process.env.PORT || 8080;
+  console.log(`Starting server at http://127.0.0.1:${port}`);
+  server.listen(port);
 });
