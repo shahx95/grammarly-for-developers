@@ -44,7 +44,7 @@ public class JavaAssertionEndpointApplication {
         signer = new RSASSASigner(key.toRSAKey());
     }
 
-    @CrossOrigin
+    @CrossOrigin(allowCredentials = "true", originPatterns = {"*"})
     @GetMapping("/assertion")
     public Map<String, String> createAssertion(@RequestParam(value = "clientId") String clientId) throws JOSEException {
         Date now = new Date();
