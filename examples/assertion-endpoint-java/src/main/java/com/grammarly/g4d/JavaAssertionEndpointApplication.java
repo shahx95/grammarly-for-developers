@@ -11,13 +11,14 @@ import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
@@ -38,14 +39,15 @@ public class JavaAssertionEndpointApplication {
 
     @PostConstruct
     public void initializeSigningKey() throws ParseException, JOSEException, IOException {
-        InputStream inStream = new FileInputStream("./private.jwk");
+        Resource privateKeyResource = new ClassPathResource("private.jwk");
+        InputStream inStream = privateKeyResource.getInputStream();
         String fileContents = IOUtils.readInputStreamToString(inStream, StandardCharsets.UTF_8);
         key = JWK.parse(fileContents);
         signer = new RSASSASigner(key.toRSAKey());
     }
 
     @CrossOrigin(allowCredentials = "true", originPatterns = {"*"})
-    @GetMapping("/assertion")
+    @GetMapping("/")
     public Map<String, String> createAssertion(@RequestParam(value = "clientId") String clientId) throws JOSEException {
         Date now = new Date();
         JWTClaimsSet claims = new JWTClaimsSet.Builder()
@@ -57,7 +59,7 @@ public class JavaAssertionEndpointApplication {
                 .build();
 
         SignedJWT signedJwt = new SignedJWT(
-                new JWSHeader.Builder(JWSAlgorithm.RS256)
+                new JWSHeader.Builder(getKeyAlgorithm(key))
                         .keyID(key.getKeyID())
                         .customParam("ver", "v1") // custom parameter required by Grammarly
                         .build(),
@@ -66,5 +68,9 @@ public class JavaAssertionEndpointApplication {
 
         signedJwt.sign(signer);
         return Map.of("assertion", signedJwt.serialize());
+    }
+
+    private JWSAlgorithm getKeyAlgorithm(JWK key) {
+        return JWSAlgorithm.parse(key.getAlgorithm().getName());
     }
 }
