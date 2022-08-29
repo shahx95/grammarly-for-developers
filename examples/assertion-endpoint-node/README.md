@@ -1,13 +1,13 @@
-# Trusted authentication server (node.js)
+# Assertion Server (Node.js)
 
-This server is provided to help developers experiment with trusted authentication.  The goal is not to provide a fully production-ready server to secure your existing Grammarly implementation.
+This server is provided to help developers experiment with trusted authentication. The goal is not to provide a fully production-ready server to secure your existing Grammarly implementation.
 
 
-The code in this directory provides an example Node server that generates valid assertions for the Grammarly Text Editor SDK's trusted authentication.
+The code in this directory provides an example Node.js server that generates valid assertions for the Grammarly Text Editor SDK.
 
 ## Getting Started
 
-You will first need to retrieve a private key in the JWK format. You can do this by navigating to your app in the
+You will first need to retrieve a private key in JWK format. You can do this by navigating to your app in the
 [Grammarly Developer Hub](https://developer.grammarly.com/apps), selecting Trusted Authentication,
 and then clicking **Generate new key**.
 

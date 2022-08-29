@@ -63,6 +63,14 @@
       In the example below, we provide an oauthAssertionProvider in our
       plugin configuration. The oauthAssertionProvider shown here POSTs
       the clientId.
+
+      Note that this example will *not* work with the example Node.js server
+      (https://github.com/grammarly/grammarly-for-developers/tree/main/examples/assertion-endpoint-node)
+      or the example Java Sprint Boot server 
+      (https://github.com/grammarly/grammarly-for-developers/tree/main/examples/assertion-endpoint-java)
+      we provide. These example servers accept GET requests. The code below
+      uses a POST request. You can write your own assertion endpoint that 
+      accepts POST requests or modify the example servers to accept POST requests.
     -->
     <script type="module">
       document

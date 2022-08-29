@@ -1,6 +1,6 @@
 # Grammarly Trusted Authentication Configuration
 
-This demo shows how to add an oauthAssertionProvider attribute to the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a `<textarea>` in a vanilla JavaScript app.
+This demo shows how to configure the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to use a custom function as a value for the `oauthAssertionProvider` attribute. The example uses a vanilla JavaScript app.
 
 ## Try the Demo
 
@@ -8,7 +8,7 @@ You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/
 
 ## How it Works
 
-[index.html](./public/index.html) contains a `<textarea>`. The example uses the [`oauthAssertionProvider` attribute](https://developer.grammarly.com/docs/editor-sdk-intro#usage) to provide trusted auth assertions to the sdk.
+[index.html](./public/index.html) contains a `<textarea>`. The example uses the [`oauthAssertionProvider` attribute](https://developer.grammarly.com/docs/editor-sdk-intro#usage) to provide trusted authentication assertions to the SDK.
 
 ## Get the Code
 
