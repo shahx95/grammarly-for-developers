@@ -21,8 +21,6 @@ for (const project of projects) {
     directory: "/examples/${project}"
     schedule:
       interval: "daily"
-    allow:
-      - dependency-name: "@grammarly/*"
 `.replace(/^\n+|\n+$/g, ''),
   )
 }
