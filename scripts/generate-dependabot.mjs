@@ -21,6 +21,14 @@ for (const project of projects) {
     directory: "/examples/${project}"
     schedule:
       interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
 `.replace(/^\n+|\n+$/g, ''),
   )
 }
