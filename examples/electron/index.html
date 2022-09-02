@@ -76,8 +76,8 @@ It can even help when you wanna refine ur slang or formality level. That's espec
     <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=YOUR_CLIENT_ID"></script>
     <script>
       Grammarly.init().then((grammarly) => {
-        grammarly.withElement(document.querySelector("div[contenteditable]"), {
-          oauth: { redirectUri: "example://grammarly-auth/" },
+        grammarly.addPlugin(document.querySelector("div[contenteditable]"), {
+          oauthRedirectUri: "example://grammarly-auth/",
         });
 
         window.registerGrammarlyAuthCallback(url => {
