@@ -1,7 +1,7 @@
 {
   "name": "trusted-auth-server",
   "version": "1.0.0",
-  "description": "An example node server that is capable to generate valid assertions to support the Trusted Auth system.",
+  "description": "An example Node server that generates valid assertions to support the Grammarly Text Editor SDK's trusted authentication",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

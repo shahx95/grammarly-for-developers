@@ -1,0 +1,350 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/examples/assertion-endpoint-node"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-autocomplete"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-ckeditor"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-ckeditor-imperative"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-document-dialect"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-document-domain"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-events"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-intro-text"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-quill"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-quill-imperative"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-react"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-react-ckeditor"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-react-slate"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-react-stats"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-react-tinymce"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-suggestions-config"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-tinymce"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-tinymce-imperative"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-tone"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-vue"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-vue-ckeditor"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/editor-sdk-vue-tinymce"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/electron"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/electron-javascript-npm"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/electron-react"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/electron-vue"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/sdk"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
+  - package-ecosystem: "npm"
+    directory: "/examples/trusted-auth"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@grammarly/editor-sdk"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-react"
+        dependency-type: all
+      - dependency-name: "@grammarly/editor-sdk-vue"
+        dependency-type: all
