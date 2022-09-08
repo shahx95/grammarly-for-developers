@@ -1,6 +1,6 @@
 import { init } from "@grammarly/editor-sdk";
 
-const demoClientId = "YOUR_CLIENT_ID";
+const demoClientId = "client_CAsxR7Djxg9EiT9VCyE3uP";
 
 declare global {
   interface Window {
@@ -10,11 +10,6 @@ declare global {
 
 async function setupGrammarly() {
   const grammarly = await init(demoClientId);
-
-  // setup the editor
-  grammarly.addPlugin(document.querySelector("div[contenteditable]"), {
-    oauthRedirectUri: "example://grammarly-auth/",
-  });
 
   // setup connected accounts
   window.registerGrammarlyAuthCallback((url) => {
