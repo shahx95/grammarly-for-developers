@@ -1,5 +1,5 @@
 <script>
-import { Grammarly, GrammarlyEditorPlugin } from "@grammarly/editor-sdk-vue";
+import { Grammarly, GrammarlyEditorPlugin } from "@grammarly/editor-sdk-vue/v2";
 import { demoText, demoClientId } from "./demo";
 import Editor from "@tinymce/tinymce-vue";
 

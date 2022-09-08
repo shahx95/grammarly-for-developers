@@ -1,4 +1,4 @@
-import { init } from '@grammarly/editor-sdk-vue'
+import { init } from '@grammarly/editor-sdk-vue/v2'
 import { demoClientId } from './components/demo'
 
 export function setupGrammarlyConnectedAccounts() {
