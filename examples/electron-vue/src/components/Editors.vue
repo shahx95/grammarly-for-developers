@@ -1,5 +1,5 @@
 <script>
-import { Grammarly, GrammarlyEditorPlugin } from "@grammarly/editor-sdk-vue";
+import { Grammarly, GrammarlyEditorPlugin } from "@grammarly/editor-sdk-vue/v2";
 import { demoText, demoClientId } from "./demo";
 
 export default {
@@ -9,7 +9,10 @@ export default {
 </script>
 
 <template>
-  <Grammarly :clientId="clientId" :config="{ oauth: { redirectUri: 'example://grammarly-auth/' } }">
+  <Grammarly
+    :clientId="clientId"
+    :config="{ oauthRedirectUri: 'example://grammarly-auth/' }"
+  >
     <div>
       <h2>Textarea</h2>
       <GrammarlyEditorPlugin>

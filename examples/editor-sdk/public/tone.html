@@ -48,34 +48,32 @@
       about the tone detector.
     </p>
     <h2>Textarea</h2>
-    <textarea rows="10">
+    <grammarly-editor-plugin toneDetector="on">
+      <textarea rows="10">
 Thank you all for being here today, and welcome to the third annual TRTL conference! I couldn't be more excited about all the fantastic speakers we'll be hearing on this stage. I would like to challenge you to step outside your comfort zone today and introduce yourself to at least three new people. Trust me: you'll be glad you did.</textarea
-    >
+      >
+    </grammarly-editor-plugin>
 
     <h2>Input</h2>
     <label for="test-input">Label</label>
-    <input
-      id="test-input"
-      value="Proposal Mobile alerts have become a proven tool to increase engagement for both active and recently inactive users. But you need to be careful not to send so many that it becomes annoying. I've developed some strategy recommendations, which I'm going to outline briefly."
-    />
+    <grammarly-editor-plugin toneDetector="on">
+      <input
+        id="test-input"
+        value="Proposal Mobile alerts have become a proven tool to increase engagement for both active and recently inactive users. But you need to be careful not to send so many that it becomes annoying. I've developed some strategy recommendations, which I'm going to outline briefly."
+      />
+    </grammarly-editor-plugin>
 
     <h2>Contenteditable</h2>
-    <div contenteditable="true">
-      <p>
-        I don't know much about it, but I have observed that social media has
-        become industry-standard for customer care. Furthermore, consumers
-        expect it: Seven in 10 U.S. consumers say they've spent more with a
-        company that provides exceptional service.
-      </p>
-    </div>
-
-    <script src="https://unpkg.com/@grammarly/editor-sdk@1.6?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
-    <script>
-      Grammarly.init().then((grammarly) => {
-        grammarly.withQuerySelector("textarea, input, [contenteditable]", {
-          ui: { showToneDetector: true },
-        });
-      });
-    </script>
+    <grammarly-editor-plugin toneDetector="on">
+      <div contenteditable="true">
+        <p>
+          I don't know much about it, but I have observed that social media has
+          become industry-standard for customer care. Furthermore, consumers
+          expect it: Seven in 10 U.S. consumers say they've spent more with a
+          company that provides exceptional service.
+        </p>
+      </div>
+    </grammarly-editor-plugin>
+    <script src="https://unpkg.com/@grammarly/editor-sdk@2.0.0-alpha.2?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
   </body>
 </html>

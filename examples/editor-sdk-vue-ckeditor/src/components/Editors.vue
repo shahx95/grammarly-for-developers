@@ -1,5 +1,5 @@
 <script>
-import { Grammarly, GrammarlyEditorPlugin } from "@grammarly/editor-sdk-vue";
+import { Grammarly, GrammarlyEditorPlugin } from "@grammarly/editor-sdk-vue/v2";
 import { demoText, demoClientId } from "./demo";
 import Vue from "vue";
 import CKEditor from "@ckeditor/ckeditor5-vue2";
@@ -17,7 +17,6 @@ export default {
   components: { Grammarly, GrammarlyEditorPlugin },
 };
 </script>
-
 
 <template>
   <!-- Configure the Grammarly Editor SDK.

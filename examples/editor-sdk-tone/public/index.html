@@ -40,15 +40,28 @@
   </head>
   <body>
     <h2>Tone Detector</h2>
-      <grammarly-editor-plugin config.toneDetector="on">
-        <div contenteditable="true">
-          <h3>Spot the tone detector near the Grammarly button</h3>
-          <p>
-            I think we should be able to get the order to you in time for your event if we change the shipping to 2-day air. Would you like me to go ahead and make that change for you?
-          </p>
-        </div>
-      </grammarly-editor-plugin>
+    <grammarly-editor-plugin config.toneDetector="on">
+      <div contenteditable="true">
+        <h3>Spot the tone detector near the Grammarly button</h3>
+        <p>
+          I think we should be able to get the order to you in time for your
+          event if we change the shipping to 2-day air. Would you like me to go
+          ahead and make that change for you?
+        </p>
+      </div>
+    </grammarly-editor-plugin>
 
-    <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <script src="https://unpkg.com/@grammarly/editor-sdk@2.0.0-alpha.2?clientId=client_VBR3WR84oUZfdjWxkEcyh5"></script>
+    <script>
+      document.querySelector("grammarly-editor-plugin").config = {
+        toneDetector: "on",
+        oauthAssertionProvider: () => {
+          return Promise.resolve({
+            assertion:
+              "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ1c2VySWQiOjEyLCJzdWIiOiJjbGllbnRfVkJSM1dSODRvVVpmZGpXeGtFY3loNSIsImlhdCI6MTY2MDY3MjI1MiwiaXNzIjoiY2xpZW50X1ZCUjNXUjg0b1VaZmRqV3hrRWN5aDUiLCJhdWQiOiJodHRwczovL3Rva2Vucy5ncmFtbWFybHkuY29tL29hdXRoMi90b2tlbiIsImV4cCI6MTY2MDY3MjU1Mn0.",
+          });
+        },
+      };
+    </script>
   </body>
 </html>

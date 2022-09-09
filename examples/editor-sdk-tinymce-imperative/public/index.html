@@ -45,11 +45,11 @@ The basics
 Mispellings and grammatical errors can effect your credibility. The same goes for misused commas, and other types of punctuation . Not only will Grammarly underline these issues in red, it will also showed you how to correctly write the sentence.
 
 Underlines that are blue indicate that Grammarly has spotted a sentence that is unnecessarily wordy. You'll find suggestions that can possibly help you revise a wordy sentence in an effortless manner.
-  
+
 But wait...there's more?
 
 Grammarly can give you very helpful feedback on your writing. Passive voice can be fixed by Grammarly, and it can handle classical word-choice mistakes.
-  
+
 It can even help when you wanna refine ur slang or formality level. That's especially useful when writing for a broad audience ranging from businessmen to friends and family, don't you think? It'll inspect your vocabulary carefully and suggest the best word to make sure you don't have to analyze your writing too much.
     </textarea>
 
@@ -64,7 +64,7 @@ It can even help when you wanna refine ur slang or formality level. That's espec
     </p>
   </div>
 
-  <script src="https://unpkg.com/@grammarly/editor-sdk@1.7?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+  <script src="https://unpkg.com/@grammarly/editor-sdk@2.0.0-alpha.2?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
   <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
   <script type="module">
@@ -73,7 +73,7 @@ It can even help when you wanna refine ur slang or formality level. That's espec
       const grammarly = await Grammarly.init();
 
       // Add Grammarly suggestions to the element
-      const grammarlyEditor = grammarly.withElement(
+      const grammarlyPluginElement = grammarly.addPlugin(
         document.querySelector(elementId),
         {
           documentDialect: "british",
@@ -90,7 +90,7 @@ It can even help when you wanna refine ur slang or formality level. That's espec
       // Set the editor and viewport to the newly created TinyMCE elements
       const editor = tinyEditor.getBody(); // <body contenteditable=true>
       const viewport = tinyEditor.iframeElement; // <iframe> that contains the body
-      grammarlyEditor.element.connect(editor, viewport);
+      grammarlyPluginElement.connect(editor, viewport);
     }
 
     // Add Grammarly suggestions and TinyMCE rich text editing

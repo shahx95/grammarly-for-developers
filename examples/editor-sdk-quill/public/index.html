@@ -39,7 +39,7 @@
 <body>
   <h2>Quill Rich Text Editor</h2>
   <!-- Wrap the div with <grammarly-editor-plugin> to add Grammarly suggestions -->
-  <grammarly-editor-plugin>
+  <grammarly-editor-plugin config.autocomplete="on" config.documentDialect="british">
     <div id="quill-div">
       <h2>The basics</h2>
 
@@ -75,7 +75,7 @@
     </div>
   </grammarly-editor-plugin>
 
-  <script src="https://unpkg.com/@grammarly/editor-sdk@1.7?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+  <script src="https://unpkg.com/@grammarly/editor-sdk@2.0.0-alpha.2?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
 
   <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
@@ -83,11 +83,6 @@
     // Initialize a Quill editor
     var quill = new Quill("#quill-div", {
       theme: "snow"
-    });
-
-    // Configure the Grammarly Text Editor SDK
-    document.querySelectorAll("grammarly-editor-plugin").forEach((grammarlyEditor) => {
-      grammarlyEditor.config = { autocomplete: "on", documentDialect: "british" };
     });
   </script>
 </body>
