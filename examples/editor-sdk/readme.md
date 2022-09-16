@@ -1,4 +1,4 @@
-# Grammarly Text Editor SDK & Vanilla JavaScript Example (data-grammarly)
+# Grammarly Text Editor SDK & Vanilla JavaScript Example
 
 This demo shows how to add the [Grammarly Text Editor SDK](https://developer.grammarly.com/) to a `<textarea>`, `<input>`, and `<div>` in a vanilla JavaScript app. 
 

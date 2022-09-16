@@ -38,7 +38,7 @@
       }
     </style>
   </head>
-  <body>
+  <>
     <h1>Tone Detector</h1>
     <p>
       Focus an editor to start.
@@ -48,7 +48,7 @@
       about the tone detector.
     </p>
     <h2>Textarea</h2>
-    <grammarly-editor-plugin toneDetector="on">
+    <grammarly-editor-plugin config.toneDetector="on">
       <textarea rows="10">
 Thank you all for being here today, and welcome to the third annual TRTL conference! I couldn't be more excited about all the fantastic speakers we'll be hearing on this stage. I would like to challenge you to step outside your comfort zone today and introduce yourself to at least three new people. Trust me: you'll be glad you did.</textarea
       >
@@ -56,7 +56,7 @@ Thank you all for being here today, and welcome to the third annual TRTL confere
 
     <h2>Input</h2>
     <label for="test-input">Label</label>
-    <grammarly-editor-plugin toneDetector="on">
+    <grammarly-editor-plugin config.toneDetector="on">
       <input
         id="test-input"
         value="Proposal Mobile alerts have become a proven tool to increase engagement for both active and recently inactive users. But you need to be careful not to send so many that it becomes annoying. I've developed some strategy recommendations, which I'm going to outline briefly."
@@ -64,7 +64,7 @@ Thank you all for being here today, and welcome to the third annual TRTL confere
     </grammarly-editor-plugin>
 
     <h2>Contenteditable</h2>
-    <grammarly-editor-plugin toneDetector="on">
+    <grammarly-editor-plugin config.toneDetector="on">
       <div contenteditable="true">
         <p>
           I don't know much about it, but I have observed that social media has
@@ -74,6 +74,6 @@ Thank you all for being here today, and welcome to the third annual TRTL confere
         </p>
       </div>
     </grammarly-editor-plugin>
-    <script src="https://unpkg.com/@grammarly/editor-sdk@2.0.0-alpha.2?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <script src="https://unpkg.com/@grammarly/editor-sdk@2.0?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
   </body>
 </html>
