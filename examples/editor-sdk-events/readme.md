@@ -1,4 +1,4 @@
-# Grammarly Text Editor SDK with introText
+# Grammarly Text Editor SDK with event listeners
 
 This demo shows how to add [event listeners](https://developer.grammarly.com/docs/api/editor-sdk/grammarlyeditorpluginelementeventmap#grammarlyeditorpluginelementeventmap) to  [Grammarly Text Editor SDK](https://developer.grammarly.com/).
 
