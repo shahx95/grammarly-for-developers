@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Activation Demo (Focus)</title>
+    <link href="./main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h2>Activation Demo (Focus)</h2>
+    <p>
+      This page has
+      <a
+        href="https://developer.grammarly.com/docs/v2.x/api/editor-sdk/editorconfig#activation"
+        >activation</a
+      >
+      set to "focus" (the default). Open
+      <a href="index.html">index.html</a> to see the difference in behavior when
+      activation is set to "immediate."
+    </p>
+    <grammarly-editor-plugin config.activation="focus">
+      <textarea>
+This paragraph has eight words and one mispeling.
+      </textarea>
+    </grammarly-editor-plugin>
+
+    <div>
+      <h3>Word count: <span id="word-count">not yet counted</span></h3>
+      <h3>
+        Suggestions accepted: <span id="suggestion-count">not yet counted</span>
+      </h3>
+    </div>
+
+    <script>
+      const editor = document.querySelector("grammarly-editor-plugin");
+
+      editor.addEventListener("document-stats", updateWordCount);
+      editor.addEventListener("session-stats", updateSuggestionCount);
+
+      function updateWordCount(event) {
+        document.getElementById("word-count").innerHTML =
+          event.detail.wordsCount;
+      }
+
+      function updateSuggestionCount(event) {
+        document.getElementById("suggestion-count").innerHTML =
+          event.detail.suggestionsAccepted.total;
+      }
+    </script>
+    <script src="https://unpkg.com/@grammarly/editor-sdk@2.0.1?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+  </body>
+</html>
