@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Grammarly, GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
+import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
 import { demoClientId, demoText } from "./demo";
 import "./style.css";
 
@@ -25,18 +25,18 @@ export const Editors = () => {
           type="radio"
           id="suggestion-cards-on"
           name="suggestion-cards"
-          onClick={() => setGrammarlyConfig({ ...grammarlyConfig, suggestionCards: "on" })}
+          onChange={() => setGrammarlyConfig({ ...grammarlyConfig, suggestionCards: "on" })}
           checked={grammarlyConfig.suggestionCards === "on"}
         />
-        <label for="suggestion-cards-on">On</label><br />
+        <label htmlFor="suggestion-cards-on">On</label><br />
         <input
           type="radio"
           id="suggestion-cards-off"
           name="suggestion-cards"
-          onClick={() => setGrammarlyConfig({ ...grammarlyConfig, suggestionCards: "off" })}
+          onChange={() => setGrammarlyConfig({ ...grammarlyConfig, suggestionCards: "off" })}
           checked={grammarlyConfig.suggestionCards === "off"}
         />
-        <label for="suggestion-cards-off">Off</label><br />
+        <label htmlFor="suggestion-cards-off">Off</label><br />
       </p>
 
       <p>
@@ -45,18 +45,18 @@ export const Editors = () => {
           type="radio"
           id="underlines-on"
           name="underlines"
-          onClick={() => setGrammarlyConfig({ ...grammarlyConfig, underlines: "on" })}
+          onChange={() => setGrammarlyConfig({ ...grammarlyConfig, underlines: "on" })}
           checked={grammarlyConfig.underlines === "on"}
         />
-        <label for="underlines-on">On</label><br />
+        <label htmlFor="underlines-on">On</label><br />
         <input
           type="radio"
           id="underlines-off"
           name="underlines"
-          onClick={() => setGrammarlyConfig({ ...grammarlyConfig, underlines: "off" })}
+          onChange={() => setGrammarlyConfig({ ...grammarlyConfig, underlines: "off" })}
           checked={grammarlyConfig.underlines === "off"}
         />
-        <label for="underlines-off">Off</label><br />
+        <label htmlFor="underlines-off">Off</label><br />
       </p>
 
       <p>
@@ -65,22 +65,22 @@ export const Editors = () => {
           type="radio"
           id="plugin-on"
           name="plugin"
-          onClick={() => {
+          onChange={() => {
             setShowGrammarly(true)
             // so that suggestions show up without needing to focus textarea
             setGrammarlyConfig({ ...grammarlyConfig, activation: "immediate" })
           }}
           checked={showGrammarly}
         />
-        <label for="plugin-on">On</label><br />
+        <label htmlFor="plugin-on">On</label><br />
         <input
           type="radio"
           id="plugin-off"
           name="plugin"
-          onClick={() => setShowGrammarly(false)}
+          onChange={() => setShowGrammarly(false)}
           checked={!showGrammarly}
         />
-        <label for="plugin-off">Off</label><br />
+        <label htmlFor="plugin-off">Off</label><br />
       </p>
     </div>
   );
