@@ -47,7 +47,7 @@ body:
       description: Please include a minimal reproduction example
       value: |
         Minimal Repro: <!-- PUT REPRO URL HERE -->
-        
+
         1. Open ...
         2. Click ...
         3. Type ...
@@ -67,14 +67,28 @@ body:
       placeholder: Tell us what you want!
     validations:
       required: true
-  - type: input
-    id: contact
+  - type: markdown
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
+      value: "## How do I debug issues with the SDK?"
+  - type: markdown
+    attributes:
+      value: |
+        Here are the steps that we recommend:
+          * [Upgrade to the latest version of the SDK](https://developer.grammarly.com/docs/releases#specifying-the-version-of-the-text-editor-sdk) and check if the error still occurs.
+          * Check the console in your browser's [developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools#how_to_open_the_devtools_in_your_browser) for warnings and error messages. 
+            * As of version `1.7.5` or later, some error codes may direct you to the [Error Explainer page](https://developer.grammarly.com/docs/error-explainer) to view the complete message.
+          * Check the Network tab in your browser's developer tools and filter by “grammarly” to see if any requests are being blocked.
+          * Run `Grammarly.debug()` from the console and look for potential problems.
+          * Run `Grammarly.printLogs(true)` from the console and look for potential problems.
+  - type: markdown
+    attributes:
+      value: "## Need urgent support?"
+  - type: markdown
+    attributes:
+      value: |
+        If you need urgent support or have a question specific to your account or application that you want to raise to us one-on-one, please [open a support ticket](https://support.grammarly.com/hc/en-us/requests/new#/resolve-a-technical-issue/text-editor-sdk-api-/).
+        
+        ---
 #   - type: checkboxes
 #     attributes:
 #       label: Code of Conduct
@@ -85,4 +99,3 @@ body:
   - type: markdown
     attributes:
       value: "__Thanks for completing our form!__"
-
