@@ -5,7 +5,7 @@ This server is provided to help developers experiment with trusted authenticatio
 
 The code in this directory provides an example Node.js server that generates valid assertions for the Grammarly Text Editor SDK.
 
-## Getting Started
+## Getting started
 
 You will first need to retrieve a private key in JWK format. You can do this by navigating to your app in the
 [Grammarly Developer Hub](https://developer.grammarly.com/apps), selecting Trusted Authentication,
@@ -36,10 +36,10 @@ When setting the `oauthAssertionProvider` [EditorConfig property](https://develo
     config.oauthAssertionProvider="http://127.0.0.1:8080/?clientId=YOUR_CLIENT_ID">
 ```
 
-## How it Works
+## How it works
 
 When a request arrives at this server, [server.js](./server.js) handles it. This file extracts the client ID from the request and then creates a JSON Web Token (JWT). This JWT contains the necessary claims (such as issuer, subject, and audience) and is signed with the private key.
 
-## Ask a Question
+## Ask a question
 
 If you want to ask a question, share a suggestion, or chat about how you're using the Grammarly Text Editor SDK in your application, join us in the [Grammarly for Developers Discussions](https://github.com/grammarly/grammarly-for-developers/discussions).
