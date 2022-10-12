@@ -12,22 +12,24 @@ We've organized the examples in two ways: [by Text Editor SDK feature](#code-exa
 The following is a list of code examples organized by the SDK feature the app demonstrates.
 
 ### Basic Configuration Apps
-These apps show the basics of how to add the Text Editor Plugin to text editors.
+These apps show the basics of how to add the Grammarly Text Editor Plugin to text editors.
 
    - [Basic SDK Example (JavaScript)](./editor-sdk)
    - [Basic SDK Example (React)](./editor-sdk-react/)
    - [Basic SDK Example (Vue)](./editor-sdk-vue/)
 
 ### Starter Apps
-These are starter apps you can use as you work through the Quick Start. These apps do not yet have the Text Editor Plugin added to the text editors.
+These are starter apps you can use as you work through the quick start guide. These starter apps do not yet have the Text Editor Plugin added to the text editors.
 
    - [HTML Starter App](./demo-html/)
    - [JavaScript Starter App](./demo-javascript/)
    - [React Starter App](./demo-react)
    - [Vue Starter App](./demo-vue)
 
+**Note:** The quick start guide is shown when you [create a Grammarly for Developers app](https://developer.grammarly.com/apps).
+
 ### Activation
-This app shows how you can set the [activation property](https://developer.grammarly.com/docs/v2.x/api/editor-sdk/editorconfig#activation) to `focus` or `immediate`. 
+This app shows how you can set the Text Editor Plugin's [activation property](https://developer.grammarly.com/docs/v2.x/api/editor-sdk/editorconfig#activation) to `focus` or `immediate`. 
 
    - [Activation Example App](./editor-sdk-activation/)
 
@@ -35,6 +37,8 @@ This app shows how you can set the [activation property](https://developer.gramm
 This app shows how you can turn on [autocomplete](https://developer.grammarly.com/docs/autocomplete) for your app.
 
    - [Autocomplete Example App](./editor-sdk-autocomplete/)
+
+**Note:** The Autocomplete feature is only available on the [Plus plan](https://developer.grammarly.com/plans).
 
 ### Document dialect
 This app shows how you can configure the [document dialect](https://developer.grammarly.com/docs/customization#english-dialect) for your app.
@@ -89,10 +93,14 @@ This app shows how to configure suggestion categories for your app.
 
    - [Suggestion Categories Example App](./editor-sdk-suggestions-config/)
 
+**Note:** The ability to configure suggestion categories is only available on the [Plus plan](https://developer.grammarly.com/plans).
+
 ### Tone detector
-This app shows how to turn on the [tone detector](https://developer.grammarly.com/docs/tone) for your app. 
+This app shows how to turn on the [tone detector](https://developer.grammarly.com/docs/tone) for your app.
 
    - [Tone Detector Example App](./editor-sdk-tone)
+
+**Note:** The tone detector feature is only available on the [Plus plan](https://developer.grammarly.com/plans).
 
 ### Trusted Authentication
 These examples show how you can configure [trusted authentication](https://developer.grammarly.com/docs/trusted-authentication). 
