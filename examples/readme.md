@@ -4,9 +4,6 @@ This directory contains numerous code examples you can use as you learn about th
 
 We've organized the examples in two ways: [by Text Editor SDK feature](#code-examples-by-sdk-feature) and [by the technology used](#code-examples-by-the-technology-used).
 
-> **Note:** The examples in this repository are created and maintained alongside [the latest major version](https://developer.grammarly.com/docs/changelog/) of the Text Editor SDK. For previous major versions, please reference the following release branches, which are maintained for historical purposes.
-> * **Version 1.0:** https://github.com/grammarly/grammarly-for-developers/tree/release-1.11
-
 ## Code examples by SDK feature
 
 The following is a list of code examples organized by the SDK feature the app demonstrates.
