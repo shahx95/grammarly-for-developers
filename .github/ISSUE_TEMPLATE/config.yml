@@ -6,6 +6,3 @@ contact_links:
   - name: Security Issues & Bug Bounty
     url: https://hackerone.com/grammarly
     about: Please report security vulnerabilities here.
-  - name: Documentation
-    url: https://developer.grammarly.com/docs/
-    about: Check documentation.

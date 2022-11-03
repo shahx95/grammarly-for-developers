@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a bug report
+description: File a bug report.
 title: "[Bug]: "
 labels: ["bug", "triage"]
 assignees:
@@ -98,4 +98,4 @@ body:
 #           required: true
   - type: markdown
     attributes:
-      value: "__Thanks for completing our form!__"
+      value: "__Thank you for helping us improve Grammarly for Developers and the Text Editor SDK!__"

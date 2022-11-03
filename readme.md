@@ -4,6 +4,13 @@
 
 [![Grammarly for Developers](https://github.com/grammarly/grammarly-for-developers/blob/main/docs/sdk_product_animation.gif)](https://developer.grammarly.com)
 
+## About the Text Editor SDK 💻
+The Text Editor SDK provides writing assistance to your end users across several dimensions, including:
+- **Correctness** - Eliminates grammar, spelling, and punctuation mistakes and ensures word choices sound natural and fluent.
+- **Clarity** - Makes every sentence concise and easy to follow and rewrites hard-to-read sentences.
+- **Engagement** - Chooses the most compelling words and uses varied, engaging sentence structure.
+- **Delivery** - Helps end users find the right tone, eliminates hedging language (to sound more confident), finesses phrases to have more tact and empathy for readers, and supports respectful and current language practices.
+
 ## Code examples 🧑‍💻
 
 This repo contains numerous code examples that you can use as you learn about the Grammarly Text Editor SDK. You can find all of the examples in the [examples](./examples) directory. Check out the [examples readme](./examples/readme.md) for a summary of the examples.
