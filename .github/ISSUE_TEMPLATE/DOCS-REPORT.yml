@@ -1,7 +1,7 @@
 name: Documentation Issue
 description: File an issue against the public documentation.
 title: "[Docs]: "
-labels: ["docs"]
+labels: documentation
 assignees:
   - AndrewDiMola
 body:
@@ -26,7 +26,10 @@ body:
       placeholder: Tell us what you want!
     validations:
       required: true
----
+  - type: markdown
+    attributes:
+      value: |
+        ---
   - type: markdown
     attributes:
       value: "__Thank you for helping us improve our documentation!__"
