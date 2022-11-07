@@ -11,6 +11,28 @@ The Text Editor SDK provides writing assistance to your end users across several
 - **Engagement** - Chooses the most compelling words and uses varied, engaging sentence structure.
 - **Delivery** - Helps end users find the right tone, eliminates hedging language (to sound more confident), finesses phrases to have more tact and empathy for readers, and supports respectful and current language practices.
 
+[Try the demo](https://developer.grammarly.com/docs/demo) to get a feel for the experience your users will have when you integrate Grammarly into your app.
+
+### Installing the SDK
+Add our real-time writing assistance to your app with just a few lines of code. 
+
+| Platform       | NPM package                       | Description                                             |
+| ---------------| --------------------------------- | ------------------------------------------------------- |
+| [JavaScript]   | [![sdk-status]][sdk-package]      | Grammarly Text Editor SDK for JavaScript                |
+| [React]        | [![react-status]][react-package]  | Grammarly Text Editor SDK for React                     |
+| [Vue]          | [![vue-status]][vue-package]      | Grammarly Text Editor SDK for Vue 3 / Vue 2             |
+
+[JavaScript]: https://developer.grammarly.com/docs/editor-sdk-intro
+[React]: https://developer.grammarly.com/docs/editor-sdk-react
+[Vue]: https://developer.grammarly.com/docs/editor-sdk-vue
+
+[sdk-status]: https://img.shields.io/npm/v/@grammarly/editor-sdk.svg?style=flat&color=green&label=@grammarly/editor-sdk
+[sdk-package]: https://www.npmjs.com/package/@grammarly/editor-sdk
+[react-status]: https://img.shields.io/npm/v/@grammarly/editor-sdk-react.svg?style=flat&color=green&label=@grammarly/editor-sdk-react
+[react-package]: https://www.npmjs.com/package/@grammarly/editor-sdk-react
+[vue-status]: https://img.shields.io/npm/v/@grammarly/editor-sdk-vue.svg?style=flat&color=green&label=@grammarly/editor-sdk-vue
+[vue-package]: https://www.npmjs.com/package/@grammarly/editor-sdk-vue
+
 ## Code examples 🧑‍💻
 
 This repo contains numerous code examples that you can use as you learn about the Grammarly Text Editor SDK. You can find all of the examples in the [examples](./examples) directory. Check out the [examples readme](./examples/readme.md) for a summary of the examples.
