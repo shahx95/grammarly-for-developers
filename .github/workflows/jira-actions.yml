@@ -21,9 +21,9 @@ jobs:
       uses: atlassian/gajira-create@master
       with:
         project: ${{ secrets.JIRA_PROJECT }}
-        issuetype: ${{ secrets.JIRA_TYPE. }}
+        issuetype: ${{ secrets.JIRA_TYPE }}
         summary: |
-          ${{ github.event.issue.title
+            ${{ github.event.issue.title }}
         description: |
             ${{ github.event.issue.body }}
             ----
