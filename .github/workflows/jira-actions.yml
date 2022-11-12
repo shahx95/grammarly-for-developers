@@ -30,3 +30,4 @@ jobs:
             {panel}
             _[Github permalink |${{ github.event.issue.html_url }}]_
             {panel}
+        fields: '{"labels": ["${{ secrets.JIRA_LABEL }}"], "sprint": "${{ secrets.JIRA_SPRINT }}" }'
