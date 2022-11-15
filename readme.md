@@ -14,7 +14,7 @@ The Text Editor SDK provides writing assistance to your end users across several
 [Try the demo](https://developer.grammarly.com/docs/demo) to get a feel for the experience your users will have when you integrate Grammarly into your app.
 
 ### Installing the SDK
-Add our real-time writing assistance to your app with just a few lines of code. 
+Add our real-time writing assistance to your app with just a few lines of code.
 
 | Platform       | NPM package                       | Description                                             |
 | ---------------| --------------------------------- | ------------------------------------------------------- |
@@ -32,6 +32,9 @@ Add our real-time writing assistance to your app with just a few lines of code.
 [react-package]: https://www.npmjs.com/package/@grammarly/editor-sdk-react
 [vue-status]: https://img.shields.io/npm/v/@grammarly/editor-sdk-vue.svg?style=flat&color=green&label=@grammarly/editor-sdk-vue
 [vue-package]: https://www.npmjs.com/package/@grammarly/editor-sdk-vue
+
+### Changelog
+We typically release new versions of the SDK on Tuesdays. We occasionally release urgent patches on other days of the week. [Check the changelog](https://developer.grammarly.com/docs/changelog/) for when each version was released and a summary of what was included in each release. 
 
 ## Code examples 🧑‍💻
 
