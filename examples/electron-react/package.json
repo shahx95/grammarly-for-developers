@@ -9,7 +9,7 @@
     "build-react": "react-scripts build"
   },
   "devDependencies": {
-    "electron": "^16.0.5"
+    "electron": "^21.3.0"
   },
   "build": {
     "appId": "com.grammarly.developer.example",
