@@ -46,9 +46,9 @@ If you've run into an issue or found a bug, you can report it by navigating to t
 
 If you have an urgent issue or an issue that needs to remain private, you can open a [support ticket](https://support.grammarly.com/hc/en-us/requests/new#/resolve-a-technical-issue/text-editor-sdk-api-/).
 
-## Grammarly for Developers community 🤝
+## Start a discussion 💬
 
-You can find the Grammarly for Developers community by navigating to the [Discussions](https://github.com/grammarly/grammarly-for-developers/discussions) tab. This is your place to ask questions, discuss best practices, and connect with other like-minded developers.
+You can start a discussion with the team and Grammarly for Developers community by navigating to the [Discussions](https://github.com/grammarly/grammarly-for-developers/discussions) tab. This is your place to ask questions, discuss best practices, and connect with other like-minded developers.
 
 Have a few minutes? 👋 [Say hello](https://github.com/grammarly/grammarly-for-developers/discussions/9) and let us know how you plan on using Grammarly in your app!
 
