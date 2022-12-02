@@ -52,20 +52,21 @@ jobs:
                 if(${{ github.event.inputs.mustBeGreen }}) {
                   console.log('Checking green status: ' + branch);
                   const stateQuery = `query($owner: String!, $repo: String!, $pull_number: Int!) {
-                    repository(owner: $owner, name: $repo) {
-                      pullRequest(number:$pull_number) {
-                        commits(last: 1) {
-                          nodes {
-                            commit {
-                              statusCheckRollup {
-                                state
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }`
+                                                    repository(owner: $owner, name: $repo) {
+                                                      pullRequest(number:$pull_number) {
+                                                        mergeable
+                                                        commits(last: 1) {
+                                                          nodes {
+                                                            commit {
+                                                              statusCheckRollup {
+                                                                state
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }`
                   const vars = {
                     owner: context.repo.owner,
                     repo: context.repo.repo,
