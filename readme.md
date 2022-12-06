@@ -1,6 +1,6 @@
 # Grammarly for Developers
 
-[Grammarly for Developers]((https://developer.grammarly.com)) is Grammarly's platform that allows you to add Grammarly's real-time writing support to your apps. This repo is your go-to source for finding [code examples](./examples#readme), reporting [issues](https://github.com/grammarly/grammarly-for-developers/issues), and chatting with the [Grammarly for Developers community](https://github.com/grammarly/grammarly-for-developers/discussions).
+[Grammarly for Developers]((https://developer.grammarly.com)) is Grammarly's platform that allows you to add Grammarly's real-time writing support to your apps. This repo is your go-to source for finding [code examples](./examples#grammarly-for-developers-code-examples), reporting [issues](https://github.com/grammarly/grammarly-for-developers/issues), and chatting with the [Grammarly for Developers community](https://github.com/grammarly/grammarly-for-developers/discussions).
 
 [![Grammarly for Developers](https://github.com/grammarly/grammarly-for-developers/blob/main/docs/sdk_product_animation.gif)](https://developer.grammarly.com)
 
@@ -41,7 +41,7 @@ We typically release new versions of the SDK on Tuesdays. We occasionally releas
 
 ## Code examples 🧑‍💻
 
-This repo contains numerous code examples that you can use as you learn about the Grammarly Text Editor SDK. You can find all of the examples in the [examples](./examples) directory. Check out the [examples readme](./examples#readme) for a summary of the examples.
+This repo contains numerous code examples that you can use as you learn about the Grammarly Text Editor SDK. You can find all of the examples in the [examples](./examples) directory. Check out the [examples readme](./examples#grammarly-for-developers-code-examples) for a summary of the examples.
 
 ## Report an issue 🐞
 
