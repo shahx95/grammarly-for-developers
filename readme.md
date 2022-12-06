@@ -11,7 +11,10 @@ The Text Editor SDK provides writing assistance to your end users across several
 - **Engagement** - Chooses the most compelling words and uses varied, engaging sentence structure.
 - **Delivery** - Helps end users find the right tone, eliminates hedging language (to sound more confident), finesses phrases to have more tact and empathy for readers, and supports respectful and current language practices.
 
+### Trying the SDK
 [Try the demo](https://developer.grammarly.com/docs/demo) to get a feel for the experience your users will have when you integrate Grammarly into your app.
+
+You can also [try the configurator](https://developer.grammarly.com/configure) to test different color, theme, and feature combinations. When you're happy with your configuration, copy the code blocks on the page directly into your project, or click the Share button to generate a URL that you can share with your friends and teammates.
 
 ### Installing the SDK
 Add our real-time writing assistance to your app with just a few lines of code.
