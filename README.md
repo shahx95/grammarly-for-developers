@@ -62,10 +62,21 @@ You can find Grammarly for Developers on social media. Be sure to follow us on y
 - [Grammarly for Developers on Twitter](https://twitter.com/GrammarlyDevs)
 - [Grammarly for Developers on YouTube](https://www.youtube.com/channel/UCQ7exNMjFiVoPI5gebc7FNA)
 - [Grammarly for Developers on Twitch](https://www.twitch.tv/GrammarlyDevs)
+
+## Blog posts 📕
+The [Grammarly for Developers blog](https://www.grammarly.com/blog/developer/) is your go-to source for our latest announcements, updates, tutorials, stories, articles, and more. Read the latest posts below!
+
+<!-- BLOG-POST-LIST:START -->
+- [How I Added Grammarly’s SDK to a Google Site in 7 Minutes](https://www.grammarly.com/blog/developer/how-to-use-grammarly-text-editor-sdk-with-google-sites/)
+- [Behind the Scenes: How We Fixed Leftover Underlines in the Grammarly Text Editor Plugin](https://www.grammarly.com/blog/developer/how-we-fixed-leftover-underlines-text-editor-plugin/)
+- [How I Customized the Grammarly Text Editor Plugin’s Theme for Each Taylor Swift Album](https://www.grammarly.com/blog/developer/how-to-customize-text-editor-plugin-theme-taylor-swift-album/)
+- [3 Ways to Programmatically Turn Off UI Elements in the Text Editor Plugin](https://www.grammarly.com/blog/developer/programmatically-turn-off-ui-elements/)
+- [The Grammarly Text Editor SDK Is Generally Available for Your Apps!](https://www.grammarly.com/blog/developer/grammarly-text-editor-sdk-generally-available/)
+<!-- BLOG-POST-LIST:END -->
+
 ## Other resources 📖
 
 Here are some other Grammarly for Developers resources:
 - [Homepage](https://developer.grammarly.com)
 - [Status](https://status.grammarly.com/)
 - [Documentation](https://developer.grammarly.com/docs/)
-- [Blog](https://www.grammarly.com/blog/developer/)
