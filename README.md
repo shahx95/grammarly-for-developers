@@ -67,11 +67,11 @@ You can find Grammarly for Developers on social media. Be sure to follow us on y
 The [Grammarly for Developers blog](https://www.grammarly.com/blog/developer/) is your go-to source for our latest announcements, updates, tutorials, stories, articles, and more. Read the latest posts below!
 
 <!-- BLOG-POST-LIST:START -->
-- [How a Checkr hack week project using the Grammarly Text Editor SDK is leading to a fairer future](https://www.grammarly.com/blog/developer/how-checkr-hack-week-project-using-text-editor-sdk-leading-fairer-future/)
+- [5 Strategies for Using Writing to Level Up Your Technical Career](https://www.grammarly.com/blog/developer/5-strategies-using-writing-level-up-technical-career/)
+- [How a Checkr Hack Week Project Using the Grammarly Text Editor SDK is Leading to a Fairer Future](https://www.grammarly.com/blog/developer/how-checkr-hack-week-project-using-text-editor-sdk-leading-fairer-future/)
 - [How I Added Grammarly’s SDK to a Google Site in 7 Minutes](https://www.grammarly.com/blog/developer/how-to-use-grammarly-text-editor-sdk-with-google-sites/)
 - [Behind the Scenes: How We Fixed Leftover Underlines in the Grammarly Text Editor Plugin](https://www.grammarly.com/blog/developer/how-we-fixed-leftover-underlines-text-editor-plugin/)
 - [How I Customized the Grammarly Text Editor Plugin’s Theme for Each Taylor Swift Album](https://www.grammarly.com/blog/developer/how-to-customize-text-editor-plugin-theme-taylor-swift-album/)
-- [3 Ways to Programmatically Turn Off UI Elements in the Text Editor Plugin](https://www.grammarly.com/blog/developer/programmatically-turn-off-ui-elements/)
 <!-- BLOG-POST-LIST:END -->
 
 ## Other resources 📖
