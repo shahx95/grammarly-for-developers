@@ -52,16 +52,5 @@
     </grammarly-editor-plugin>
 
     <script src="https://unpkg.com/@grammarly/editor-sdk@2.3.3?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
-    <script>
-      document.querySelector("grammarly-editor-plugin").config = {
-        toneDetector: "on",
-        oauthAssertionProvider: () => {
-          return Promise.resolve({
-            assertion:
-              "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ1c2VySWQiOjEyLCJzdWIiOiJjbGllbnRfVkJSM1dSODRvVVpmZGpXeGtFY3loNSIsImlhdCI6MTY2MDY3MjI1MiwiaXNzIjoiY2xpZW50X1ZCUjNXUjg0b1VaZmRqV3hrRWN5aDUiLCJhdWQiOiJodHRwczovL3Rva2Vucy5ncmFtbWFybHkuY29tL29hdXRoMi90b2tlbiIsImV4cCI6MTY2MDY3MjU1Mn0.",
-          });
-        },
-      };
-    </script>
   </body>
 </html>
