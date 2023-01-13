@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Demo App</title>
+  </head>
+  <body>
+    <h2>Document Dialect (British English)</h2>
+    <p>
+      The Grammarly Editor Plugin on this page is set to use the
+      <code>"british"</code> dialect setting.
+    </p>
+    <p>
+      <strong>Try the Grammarly Editor Plugin in the text area below!</strong>
+    </p>
+    <grammarly-editor-plugin config.activation="immediate" config.documentDialect="british">
+      <div contenteditable="true">
+        <p>
+          I like the color green. But not the colour blue so much.
+        </p>
+      </div>
+    </grammarly-editor-plugin>
+
+    <p>
+      To view the detected/configured dialect, click the Grammarly button, and
+      then review the dialect value in the "I write in" dropdown list. Note that
+      your users can always override this value to match their own dialect
+      preferences.
+    </p>
+    <p>
+      <a href="/index.html">Click here to return to the index.</a>
+    </p>
+
+    <script src="https://unpkg.com/@grammarly/editor-sdk@2.3.3?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+  </body>
+</html>
