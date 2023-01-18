@@ -10,7 +10,7 @@ You can try the demo in [CodeSandbox](https://codesandbox.io/s/github/grammarly/
 
 The app contains a textarea with default text. The Grammarly Text Editor Plugin has been added to the textarea. The default experience will be turned on when the page loads.
 
-You can choose to turn off suggestion cards, underlines, or the entire plugin using the radio buttons below the textarea. Check out the functions in [index.html](./public/index.html) to see how these options are turned on or off.
+You can choose to turn off suggestion cards, underlines, or the entire plugin using the radio buttons below the textarea. Check out [Editors.js](./src/Editors.js) to see how these options are turned on or off.
 
 ## Get the code
 
