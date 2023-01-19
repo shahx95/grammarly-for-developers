@@ -26,7 +26,7 @@ These are starter apps you can use as you work through the quick start guide. Th
 **Note:** The quick start guide is shown when you [create a Grammarly for Developers app](https://developer.grammarly.com/apps).
 
 ### Activation
-This app shows how you can set the Text Editor Plugin's [activation property](https://developer.grammarly.com/docs/v2.x/api/editor-sdk/editorconfig#activation) to `focus` or `immediate`. 
+This app shows how you can set the Text Editor Plugin's [activation property](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#activation) to `focus` or `immediate`. 
 
    - [Activation Example App](./editor-sdk-activation/)
 
@@ -43,7 +43,7 @@ This app shows how you can configure the [document dialect](https://developer.gr
    - [Document Dialect Example App](./editor-sdk-document-dialect/)
 
 ### Document domain
-This app shows how you can configure the [document domain](https://developer.grammarly.com/docs/v1.x/api/editor-sdk/domain) for your app. 
+This app shows how you can configure the [document domain](https://developer.grammarly.com/docs/api/editor-sdk/domain) for your app. 
 
    - [Document Domain Example App](./editor-sdk-document-domain/)
 

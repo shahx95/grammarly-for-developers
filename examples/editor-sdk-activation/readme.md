@@ -1,6 +1,6 @@
 # Grammarly Text Editor SDK Activation Example
 
-This demo shows the different options for the [Grammarly Text Editor SDK](https://developer.grammarly.com/) [activation property](https://developer.grammarly.com/docs/v2.x/api/editor-sdk/editorconfig#activation).
+This demo shows the different options for the [Grammarly Text Editor SDK](https://developer.grammarly.com/) [activation property](https://developer.grammarly.com/docs/api/editor-sdk/editorconfig#activation).
 
 ## Try the demo
 
