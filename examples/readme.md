@@ -31,9 +31,9 @@ This app shows how you can set the Text Editor Plugin's [activation property](ht
    - [Activation Example App](./editor-sdk-activation/)
 
 ### Autocomplete
-This app shows how you can turn on [autocomplete](https://developer.grammarly.com/docs/autocomplete) for your app.
+[This app](./editor-sdk-autocomplete/) shows how you can turn on [autocomplete](https://developer.grammarly.com/docs/autocomplete) for your app.
 
-   - [Autocomplete Example App](./editor-sdk-autocomplete/)
+![Autocomplete](https://user-images.githubusercontent.com/5179225/214080804-9a495399-b9fc-4606-8057-84cf7c9ed93f.gif)
 
 **Note:** The Autocomplete feature is only available on the [Plus plan](https://developer.grammarly.com/plans).
 
