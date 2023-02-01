@@ -61,6 +61,11 @@ These apps show how your app can respond to events (e.g., [`SessionStats`](https
    - [Event Listener Example App (JavaScript)](./editor-sdk-events/)
    - [Stats Example App (React)](./editor-sdk-react-stats/)
 
+### Grammarly button menu position
+This app shows how you can configure the [menu position](https://developer.grammarly.com/docs/api/editor-sdk/grammarlybuttonelement#menuposition) of the Grammarly button.
+
+   - [Grammarly Button Menu Position Example App](./editor-sdk-menu-position/)
+
 ### Introductory text
 This app shows how you can configure the [introductory text](https://developer.grammarly.com/docs/customization#introductory-text) that is displayed for new users in suggestion cards.
 
@@ -126,6 +131,7 @@ The following is a list of code examples organized by the technology the app use
    - [Document Domain Example App](./editor-sdk-document-domain/)
    - [Electron Example App](./electron/)
    - [Event Listener Example App](./editor-sdk-events/)
+   - [Grammarly Button Menu Position Example App](./editor-sdk-menu-position/)
    - [Intro Text Example App](./editor-sdk-intro-text/)
    - [Quill Example App](./editor-sdk-quill/)
    - [Quill Example App (Imperative)](./editor-sdk-quill-imperative/)

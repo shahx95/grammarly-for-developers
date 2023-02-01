@@ -1,0 +1,6 @@
+{
+  "name": "grammarly-text-editor-sdk-menu-position",
+  "version": "1.0.0",
+  "main": "public/index.html",
+  "description": "Example of how to set the Grammarly button menu position"
+}
