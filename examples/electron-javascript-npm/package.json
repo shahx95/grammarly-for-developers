@@ -25,7 +25,7 @@
     }
   },
   "dependencies": {
-    "@grammarly/editor-sdk": "2.3.7",
+    "@grammarly/editor-sdk": "2.3.8",
     "path": "^0.12.7"
   }
 }
