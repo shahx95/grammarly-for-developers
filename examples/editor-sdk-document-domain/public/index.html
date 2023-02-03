@@ -6,57 +6,44 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Demo App</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: sans-serif;
-      }
-
-      input,
-      textarea,
-      [contenteditable] {
-        font: inherit;
-        line-height: 1.5;
-        width: 600px;
-        padding: 8px 12px;
-        overflow: auto;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 4px;
-      }
-
-      [contenteditable] {
-        height: 10rem;
-        border: 1px solid;
-        resize: both;
-      }
-    </style>
+    <title>Document Domain demo</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <h2>General Domain</h2>
-      <grammarly-editor-plugin config.documentDomain="general">
-        <div contenteditable="true">
-          <p>
-            You'll find that suggestions can possibly be different in different domains.
-          </p>
-        </div>
-      </grammarly-editor-plugin>
+    <h2>Document Domain (General)</h2>
+    <p>
+      The document domain is the expected style or type of writing for your users and helps Grammarly offer appropriate writing suggestions. For instance, someone may want to use strictly formal writing for an academic paper, but when they're writing a poem, they want to be free to break grammar rules. 
+      By default, the Grammarly Text Editor Plugin has a document domain of <code>"general"</code>, which provides a medium level of strictness that's applicable to a wide range of writing. 
+    </p>
+    <p>
+      You can configure the Grammarly Text Editor Plugin to analyze text according to a different, more specific domain to get the most accurate and relevant writing suggestions for your users. On this page, the plugin is set to use the <code>"general"</code> domain setting.
+    </p>
+    <p>
+      <strong>Try the Grammarly Text Editor Plugin in the text area below!</strong>
+    </p>
 
+    <grammarly-editor-plugin config.activation="immediate">
+      <div contenteditable="true">
+        <p>
+          You'll find that suggestions can possibly be different in different domains.
+        </p>
+      </div>
+    </grammarly-editor-plugin>
 
-    <h2>Academic Domain</h2>
-      <grammarly-editor-plugin config.documentDomain="academic">
-        <div contenteditable="true">
-          <p>
-            You'll find that suggestions can possibly be different in different domains.
-          </p>
-        </div>
-      </grammarly-editor-plugin>
+    <p>
+      The configured domain cannot be overridden by your users from the settings menu.
+    </p>
+
+    <p>
+      Explore these other pages to try different domain configurations:
+      <ul>
+        <li><a href="/domains/academic-domain.html">Academic</a> (<code>"academic"</code>)</li>
+        <li><a href="/domains/business-domain.html">Business</a> (<code>"business"</code>)</li>
+        <li><a href="/domains/mail-domain.html">Mail</a> (<code>"mail"</code>)</li>
+        <li><a href="/domains/casual-domain.html">Casual</a> (<code>"casual"</code>)</li>
+        <li><a href="/domains/creative-domain.html">Creative</a> (<code>"creative"</code>)</li>
+      </ul>
+    </p>
 
     <script src="https://unpkg.com/@grammarly/editor-sdk@2.3.8?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
   </body>
