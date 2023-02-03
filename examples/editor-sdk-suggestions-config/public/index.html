@@ -6,57 +6,50 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Demo App</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: sans-serif;
-      }
-
-      input,
-      textarea,
-      [contenteditable] {
-        font: inherit;
-        line-height: 1.5;
-        width: 600px;
-        padding: 8px 12px;
-        overflow: auto;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 4px;
-      }
-
-      [contenteditable] {
-        height: 10rem;
-        border: 1px solid;
-        resize: both;
-      }
-    </style>
+    <title>Suggestion Categories demo</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <h2>Default suggestion categories</h2>
-      <grammarly-editor-plugin>
-        <div contenteditable="true">
-          <p>
-            Please bring me a pencil, eraser and notebook.
-          </p>
-        </div>
-      </grammarly-editor-plugin>
-
-    <h2>Oxford commas turned on</h2>
-      <grammarly-editor-plugin config.suggestionCategories.oxfordComma="on">
-        <div contenteditable="true">
-          <p>
-            Please bring me a pencil, eraser and notebook.
-          </p>
-        </div>
-      </grammarly-editor-plugin>
-
-      <script src="https://unpkg.com/@grammarly/editor-sdk@2.3.8?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+    <h2>Suggestion Categories (Default)</h2>
+    <p>
+      Suggestion categories determine the type of stylistic suggestions that are visible ("on") or muted/not visible ("off") in the Grammarly Text Editor Plugin. 
+      If your app is on the Plus plan, you can configure which suggestion categories are on or off in the plugin. 
+    </p>
+    <p>
+      Note that if a user has connected their Grammarly account to your application, the full set of customized suggestions from their user profile will always take precedence (overriding these configurations).
+    </p>
+    <p>
+      <strong>Try the Grammarly Text Editor Plugin in the text area below!</strong>
+      <p>In this example, writing suggestions for unnecessary ellipsis are turned "on".</p>
+    </p>
+    <grammarly-editor-plugin config.activation="immediate" config.suggestionCategories.unnecessaryEllipses="on">
+      <div contenteditable="true">
+        <p>
+          Please bring me a pencil, eraser and notebook...
+        </p>
+      </div>
+    </grammarly-editor-plugin>
+    <p>
+      Explore these other pages to try configurations that turn on different categories of writing suggestions:
+      <ul>
+        <li><a href="/suggestion-categories/oxford-comma.html">The Oxford comma</a> (<code>"oxfordComma"</code>)</li>
+        <li><a href="/suggestion-categories/passive-voice.html">Passive voice</a> (<code>"passiveVoice"</code>)</li>
+        <li><a href="/suggestion-categories/stylistic-fragments.html">Stylistic fragments</a> (<code>"stylisticFragments"</code>)</li>
+      </ul>
+    </p>
+    <h2>Default settings for Suggestion Categories</h2>
+    <p>
+      By default, the Grammarly Text Editor SDK mutes (turns "off") seven categories of writing suggestions.
+        <ul style="padding-bottom: 50px;"> <!--Padding used to add space between final list item text and Grammarly button-->
+          <li><strong>Unnecessary ellipsis:</strong> Suggestions regarding unnecessary use of ellipses (...) (<code>"unnecessaryEllipses"</code>).</li>
+          <li><strong>The Oxford comma:</strong> Suggestions for adding the Oxford comma after the second-to-last item in a list of things. (<code>"oxfordComma"</code>).</li>
+          <li><strong>The passive voice:</strong> Suggestions regarding use of the passive voice (<code>"passiveVoice"</code>).</li>
+          <li><strong>Stylistic fragments:</strong> Suggestions for completing all incomplete sentences, including stylistic sentence fragments that may be intentional (<code>"stylisticFragments"</code>).</li>
+          <li><strong>Conjunctions at the start of a sentence:</strong> Suggestions for using conjunctions such as "but" and "and" at the beginning of sentences (<code>"conjunctionAtStartOfSentence"</code>).</li>
+          <li><strong>Prepositions at the end of a sentence:</strong> Suggestions for using prepositions such as "with" and "in" at the end of sentences (<code>"prepositionAtTheEndOfSentence"</code>).</li>
+          <li><strong>Informal academic pronouns:</strong> Suggestions for using personal pronouns such as "I" and "you" in academic writing (<code>"informalPronounsAcademic"</code>).</li>
+        </ul>
+    </p>
+    <script src="https://unpkg.com/@grammarly/editor-sdk@2.3.8?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
   </body>
 </html>

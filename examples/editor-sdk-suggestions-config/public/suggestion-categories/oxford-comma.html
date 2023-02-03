@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Suggestion Categories demo</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h2>Suggestion categories (Oxford comma turned "on")</h2>
+    <p>
+      The Grammarly Text Editor Plugin on this page is set to show suggestions for the
+      <code>"oxfordComma"</code> writing suggestion category.
+      
+      This category, which is muted by default, suggests adding the Oxford comma after the second-to-last item in a list of things. 
+      Note that some dialects, like Australian English, may recommend usage of the Oxford comma more sparingly.
+    </p>
+    <p>
+      <strong>Try the Grammarly Text Editor Plugin in the text area below!</strong>
+      <p>In this example, writing suggestions for adding the Oxford comma are turned "on".</p>
+    </p>
+    <grammarly-editor-plugin config.activation="immediate" config.suggestionCategories.oxfordComma="on">
+      <div contenteditable="true">
+        <p>
+          Please bring me a pencil, eraser and notebook.
+        </p>
+      </div>
+    </grammarly-editor-plugin>
+    <p>
+      Configuring and muting suggestion categories is available only on the Grammarly Text Editor SDK Plus plan.
+    </p>
+    <p>
+      <a href="/index.html">Return to the index.</a>
+    </p>
+
+    <script src="https://unpkg.com/@grammarly/editor-sdk@2.3.5?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+  </body>
+</html>
