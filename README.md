@@ -1,6 +1,6 @@
 # Grammarly for Developers
 
-[Grammarly for Developers]((https://developer.grammarly.com)) is Grammarly's platform that allows you to add Grammarly's real-time writing support to your apps. This repo is your go-to source for finding [code examples](./examples/readme.md), reporting [issues](https://github.com/grammarly/grammarly-for-developers/issues), and chatting with the [Grammarly for Developers community](https://github.com/grammarly/grammarly-for-developers/discussions).
+[Grammarly for Developers](https://developer.grammarly.com) is Grammarly's platform that allows you to add Grammarly's real-time writing support to your apps. This repo is your go-to source for finding [code examples](./examples/readme.md), reporting [issues](https://github.com/grammarly/grammarly-for-developers/issues), and chatting with the [Grammarly for Developers community](https://github.com/grammarly/grammarly-for-developers/discussions).
 
 [![Grammarly for Developers](https://github.com/grammarly/grammarly-for-developers/blob/main/docs/sdk_product_animation.gif)](https://developer.grammarly.com)
 
